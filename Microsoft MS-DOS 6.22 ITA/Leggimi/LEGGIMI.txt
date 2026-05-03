@@ -1,0 +1,35 @@
+Configurazione DOS in Oracle VM VirtualBox
+
+Avviare DOS da un floppy che installa anche il CD come disco R:
+Fare FDISK
+Fare FORMAT C:
+Inserire in R: il CD con il DOS e fare SETUP
+
+Copiare dal floppy di avvio del DOS sul disco C:
+il file CD1.SYS nel quale si trova il driver del CD
+
+I due file AUTOEXEC.BAT e CONFIG.SYS configurano il DOS 
+e installano il driver del CD che viene identificato come disco D:
+
+AUTOEXEC.BAT
+
+C:\DOS\SMARTDRV.EXE /X
+PROMPT $p$g
+PATH C:\WINDOWS;C:\DOS
+SET TEMP=C:\DOS
+MODE CON CODEPAGE PREPARE=((850) C:\DOS\EGA.CPI)
+MODE CON CODEPAGE SELECT=850
+KEYB IT,,C:\DOS\KEYBOARD.SYS
+MSCDEX.EXE /D:banana /L:D
+
+CONFIG.SYS
+
+DEVICE=C:\DOS\SETVER.EXE
+DEVICE=C:\DOS\HIMEM.SYS
+DEVICE=CD1.SYS /D:banana
+DOS=HIGH
+COUNTRY=039,850,C:\DOS\COUNTRY.SYS
+DEVICE=C:\DOS\DISPLAY.SYS CON=(EGA,,1)
+FILES=30
+STACKS=9,256
+
