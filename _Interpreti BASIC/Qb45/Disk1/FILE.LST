@@ -1,0 +1,340 @@
+
+	    Contenuto dei dischi del MICROSOFT(R) QuickBASIC Compiler
+	     versione 4.50 per personal computer IBM(R), Olivetti(R)
+				 e compatibili
+
+		  (C) Copyright	Microsoft Corporation, 1989
+
+QUESTO FILE CONTIENE UN ELENCO COMPLETO DEI FILE E DELLE DIRECTORY NEI TRE
+DISCHETTI FORNITI IN QUESTA CONFEZIONE DELLA VERSIONE 4.50 DI QUICKBASIC.
+
+  --------------------------------------------------------------------------
+  Note importanti
+  ---------------
+  Questi dischi contengono vari programmi di esempio e di utilit… scritti
+  in BASIC. Tali file sono intesi solo ad uso informativo e ricreativo, e
+  la Microsoft non offre alcuna garanzia, n‚ implicita n‚ esplicita, sulla
+  loro capacit… di svolgere compiti specifi, n‚ sulla loro correttezza,
+  precisione, o affidabilit…. L'intero rischio relativo ai risultati e alle
+  prestazioni del software Š a carico dell'utente.
+
+  Tutti i programmi che terminano con l'estensione .BAS sono file sorgenti
+  QuickBASIC. I programmi contrassegnati da un asterisco (*) richiedono
+  per l'esecuzione una scheda grafica a colori.
+  --------------------------------------------------------------------------
+
+==< Contenuto del disco Installazione/Microsoft QB Express >
+
+  FILE			DESCRIZIONE
+  ----			----------------------------------------------------
+
+  BC.EXE		Compiler BASIC dalla riga di comando, chiamato
+			dal comando Crea un file EXE del menu Esegui, o
+			dal comando bc dalla riga di comando del DOS.
+
+  BQLB45.LIB		Libreria delle routine di supporto usate per creare
+			le librerie Quick.
+
+  BRUN45.EXE		Modulo di esecuzione di QuickBASIC; Š indispensabile
+			all'esecuzione dei file creati con BRUN45.LIB.
+
+  BRUN45.LIB		Libreria del modulo di esecuzione QuickBASIC; usata
+			per creare file eseguibili da QuickBASIC e dal DOS.
+
+  BX.PGM		File usato da ESERCITA.COM per eseguire QB Express
+
+  ESERCITA.COM		File eseguibile contenente l'esercitazione assistita
+			dal computer QB Express.
+
+  ESERCITA.PIF		File contenente informazioni usate per l'esecuzione
+			del programma di esercitazione QB Express
+			dall'ambiente Microsoft Windows.
+
+  INSTALLA.EXE		Il programma di installazione di QuickBASIC.
+			Eseguirlo per installare QuickBASIC, sia su un
+			sistema a disco fisso, sia su un sistema a doppio
+			floppy.
+
+  FILE.LST		Elenco dei file nella confezione QuickBASIC.
+
+  LEGGIMI.DOC		Informazioni non ancora disponibili durante la
+			preparazione dei manuali QuickBASIC.
+
+  LIB.EXE		Microsoft Library Manager; usato per creare le
+			librerie autonome (.LIB).
+
+  LINK.EXE		Microsoft Overlay Linker; usato per creare i file
+			eseguibili e le librerie Quick.
+
+  QB.BI			File da includere da usare con programmi BASIC che
+			chiamano una delle seguenti routine nella libreria
+			Quick QB.QLB o nella libreria autonoma QB.LIB:
+			ABSOLUTE, INTERRUPT, INTERRUPTX, INT86OLD, oppure
+			INT86XOLD. Il file QB.BI definisce i tipi degli
+			argomenti passati a queste routine e fornisce
+			istruzioni DECLARE per queste routine.
+
+  QB.LIB		Libreria autonoma contenente routine di supporto
+			per le chiamate al sistema DOS.
+
+  QB.QLB		Libreria Quick contenente routine di supporto per
+			le chiamate al sistema DOS.
+
+  QBCBT.CTX		File usato da ESERCITA.COM per eseguire QB Express
+
+  QBCBT.SCN		File usato da ESERCITA.COM per eseguire QB Express
+
+  QBCBT.SOB		File usato da ESERCITA.COM per eseguire QB Express
+
+  \ESEMPI		Directory contenente i programmi BASIC listati nei
+			manuali QuickBASIC, e altri programmi dimostrativi.
+			Segue una lista del contenuto della directory.
+
+
+==< Contenuto di \ESEMPI sul disco Installazione/Microsoft QB Express >
+
+  FILE			DESCRIZIONE
+  ----			----------------------------------------------------
+
+  BILCC.BAS		Programma bilancio conto corrente; ordina e
+			visualizza le entrate e le uscite digitate dall'
+			utente e poi visualizza il bilancio finale.
+
+  CAL.BAS		Programma che visualizza il calendario di qualunque
+			mese in un anno tra il 1899 e 2099.
+
+  COLORI.BAS*		Programma che mostra tutte le combinazioni dei 16
+			colori di sfondo e 3 colori di primo piano (diversi
+			dallo sfondo) nelle 2 palettes di colori disponibili
+			in modalit… schermo 1.
+
+  CRLF.BAS		Programma che apre un file ASCII, ne legge le righe
+			sostituendo gli eventuali singoli caratteri di a
+			capo o nuovariga con una sequenza a capo-nuovariga,
+			e scrive le righe risultanti su un nuovo file.
+
+  CUBO.BAS*		Programma che illustra l'animazione di un cubo
+			mediante pi— pagine schermo in modalit… schermo 7.
+
+  DOVE.BAS		Programma che cerca ricorsivamente, in tutte le
+			directory su un disco, il file specificato dall'
+			utente. Quando DOVE trova il file, visualizza il
+			percorso di ricerca della relativa directory.
+
+  EDMOT.BAS*		Programma che permette di creare una casella motivo
+			da usare in un'istruzione PAINT. Mediante caselle
+			motivo Š possibile colorare qualunque area grafica
+			chiusa sullo schermo con un motivo a scelta.
+
+  ERRFILE.BAS		Programma che cerca una stringa di caratteri dentro
+			un file ASCII. Il programma gestisce i pi— comuni
+			errori di accesso al file, quali un nome di file non
+			valido o uno sportello di unit… disco aperto.
+
+  INDICI.BAS		Programma di I/O su file che crea un indice dei
+			numeri di record di un file ad accesso casuale, e
+			poi lo usa per trovare i record pi— rapidamente.
+
+  ISTOGRAM.BAS*		Programma che crea un istogramma basato sui dati
+			digitati dall'utente.
+
+  MANDEL.BAS*		Programma che genera un frattale (rappresentazione
+			grafica a colori delle propriet… di un certo insieme
+			di numeri complessi) sullo schermo.
+
+  PALETTE.BAS*		Programma che mostra come creare l'illusione del
+			movimento facendo ruotare i colori visualizzati
+			dagli attributi colore da 1 a 15.
+
+  PLOTTER.BAS*		Un semplice programma che traccia linee mediante
+			l'istruzione DRAW del BASIC.
+
+  QLBDUMP.BAS		Programma che genera un listato del codice e dei
+			simboli publici in una libreria Quick del QuickBASIC.
+
+  RICERCA.BAS		Programma che cerca una stringa a scelta in un file
+			su disco e restituisce ogni posizione di byte dove
+			inizia un'istanza della stringa specificata.
+
+  RIMBPSET.BAS*		Programma che fa rimbalzare una palla dai lati dello
+			schermo mediante l'istruzione grafica PUT con
+			l'opzione PSET.
+
+  RIMBXOR.BAS*		Programma che fa rimbalzare una palla dai lati dello
+			schermo mediante l'istruzione grafica PUT con
+			l'opzione XOR.
+
+  SENO.BAS*		Programma che crea un grafico del seno trigonometrico
+			per angoli da 0 a pigreco (3,14159265) radianti.
+
+  STRINNUM.BAS		Programma che converte in valore numerico un numero
+			immesso come stringa, dopo aver rimosso i caratteri
+			non numerici (quali virgole e spazi) dalla stringa.
+
+  TABSI.BAS		Programma che compatta un file ASCII sostituendo con
+			un carattere di tabulazione le sequenza di spazi.
+
+  TERMINAL.BAS		Programma che fa emulare dal computer un terminale
+			"dumb" quando usato con un modem.
+
+  TOKEN.BAS		Programma che scompone una stringa di input in una
+			serie di token (stringhe di caratteri delimitati da
+			spazi vuoti, tabulazioni o segni di punteggiatura
+			come virgole o punti e virgola).
+
+  VIRMOB.BAS		Programma che permette di esaminare il formato
+			interno usato dal BASIC per rappresentare i numeri
+			in precisione semplice.
+
+==< Contenuto del disco Programma/Consulente QB >
+
+  FILE			DESCRIZIONE
+  ----			-----------------------------------------------------
+
+  QB.EXE		L'ambiente di programmazione Microsoft QuickBASIC.
+
+  QB45ADVR.HLP		File contenente la maggior parte della guida in
+			linea al linguaggio QuickBASIC.
+
+==< Contenuto del disco Utilit… >
+
+  FILE			DESCRIZIONE
+  ----			-----------------------------------------------------
+  BCOM45.LIB		Libreria alternativa del modulo di esecuzione
+			di QuickBASIC; usato per creare i file eseguibili
+			da QuickBASIC e dal DOS (file creati con questa
+			libreria non richiedono BRUN45.EXE per eseguire).
+			dimostrazione effetti sonori citato sopra
+
+  FIXKEYB.COM		Programma terminate-and-stay-resident che aggiusta un
+			problema di compatibilit… nel ROM BIOS di alcuni
+			driver di tastiera con QuickBASIC. Alcuni computer,
+			soprattutto modelli di pi— di due anni, si bloccano
+			all'avvio di QuickBASIC. Vedere il file LEGGIMI.DOC
+			per ulteriori informazioni.
+
+  FIXSHIFT.COM		Programma terminate-and-stay-resident che aggiusta un
+			errore nel ROM BIOS di alcune macchine con tastiera
+			dotata di tasti di DIREZIONE (freccie) in pi—, oltre
+			a quelli sul tastierino numerico. Vedere LEGGIMI.DOC
+			per ulteriori informazioni, se si ha tale tastiera.
+
+  MOUSE.COM		Driver del mouse usato dai programmi QuickBASIC
+			che chiamano le funzioni del mouse.
+
+  MSHERC.COM		Driver per computer dotati di scheda grafica
+			Hercules(R) Graphics Card, Graphics Card Plus,
+			Hercules InColor Card, o compatibili al 100%. Il
+			file permette di usare programmi BASIC che creano
+			grafica in modalit… schermo 3.
+
+  NOEM.OBJ		(NO EMulazione).Un file oggetto da linkare ai
+			programmi BASIC sempre eseguiti su macchine dotate
+			di chip coprocessore matematico 8087 o 80287. Il
+			linkaggio con NOEM.OBJ disattiva l'emulazione
+			software delle funzioni del coprocessore matematico,
+			e riduce le dimensioni del file eseguibile.
+
+  PATCH87.EXE		Programma di utilit… che aggiusta dei problemi che
+			che possono accadere con l'uso del MS-DOS 3.20, un
+			disco fisso, un coprocessore matematico, e
+			l'aritmetica in virgola mobile. Consultare il file
+			LEGGIMI.DOC per ulteriori dettagli.
+
+  QB.PIF		File contenente informazioni usate per l'esecuzione
+			di QuickBASIC in ambiente Microsoft Windows.
+
+  REMLINE.BAS		Programma di utilit… che converte programmi BASICA
+			salvati in formato ASCII in programmi in stile
+			QuickBASIC, togliendo i numeri di riga non citati.
+
+  SMALLERR.OBJ		File oggetto da linkare ai programmi BASIC che non
+			richiedono messaggi di errore durante l'esecuzione.
+			Il linkaggio con SMALLERR.OBJ riduce le dimensioni
+			dei file eseguibili che non richiedono messaggi di
+			errore durante l'esecuzione.
+
+  QB45ENER.HLP		File contenente la guida in linea all'ambiente
+			QuickBASIC e ai messaggi di errore.
+
+  QB45QCK.HLP		File contenente una parte della guida in linea
+			al linguaggio QuickBASIC.
+
+  DIMORDIN.BAS		Programma che usa barre colorate ed effetti sonori
+			per illustrare vari algoritmi per l'ordinamento.
+
+  DIMOS1.BAS		Versione BASICA di un programma dimostrazione
+			effetti sonori
+
+  DIMOS2.BAS		Versione QuickBASIC 2.0 del programma dimostrazione
+			effetti sonori citato sopra
+
+  DIMOS3.BAS		Versione QuickBASIC 4.0 (e successive) del programma
+
+  QSCHEDE.BAS		Parte iniziale del programma di database QSCHEDE
+			usato nell'esercitazione Introduzione pratica a
+			QuickBASIC. Nella seconda parte del manuale
+			L'ambiente di programmazione QuickBASIC, il lettore
+			stesso aggiunge il codice a livello di modulo
+			necessario per completare il programma.
+
+  QSCHEDE.DAT		File di dati di esempio fornito per il programma di
+			database QSCHEDE. Tenere questo file nella directory
+			di lavoro corrente durante l'aggiunta di codice
+			nell'esercitazione su QSCHEDE.BAS.
+
+  TORO.BAS*		Programma dimostrativo di grafica che disegna un toro
+			geometrico colorato sullo schermo, e poi loi fa
+			ruotare spostando i colori nella palette.
+
+  \ES_GUIDA		Directory contenente programmi BASIC citati nel
+			file di guida QB45ADVR.HLP.
+			Vedere la lista del contenuto qui sotto.
+
+==< Contenuto della directory \ES_GUIDA sul disco Utilit… >
+
+  FILE			DESCRIZIONE
+  ----			----------------------------------------------------
+
+  CALL_EX.BAS		Programma esempio dell'istruzione CALL
+
+  CHR_EX.BAS		Programma esempio della funzione CHR$
+
+  CMD_EX.BAS		Programma esempio della funzione COMMAND$
+
+  COM1_EX.BAS		Programma esempio delle istruzioni COMMON e CHAIN.
+			Notare che quando si esegue COM1_EX.BAS, COM2_EX.BAS
+			dev'essere nella directory di lavoro corrente
+
+  COM2_EX.BAS		Programma chiamato in COM1_EX.BAS (vedere sopra)
+
+  CSR_EX.BAS		Programma esempio della funzione CSRLIN
+
+  DECL_EX.BAS		Programma esempio dell'istruzione DECLARE
+
+  DEFFN_EX.BAS		Programma esempio dell'istruzione DEF FN
+
+  DEFSG_EX.BAS		Programma esempio delle istruzioni DEF SEG, PEEK,
+			e POKE, che attiva e disattiva il tasto BLOC MAIUS
+
+  DRAW_EX.BAS		Programma esempio dell'istruzione DRAW
+
+  FUNC_EX.BAS		Programma esempio di FUNCTION...END FUNCTION
+
+  OUT_EX.BAS		Programma esempio dell'istruzione OUT
+
+  SHARE_EX.BAS		Programma esempio dell'istruzione SHARED
+
+  SHELL_EX.BAS		Programma esempio dell'istruzione SHELL
+
+  STAT_EX.BAS		Programma esempio dell'istruzione STATIC
+
+  SUB_EX.BAS		Programma esempio di SUB...END SUB
+
+  TYPE_EX.BAS		Programma esempio di TYPE...END TYPE
+
+  UBO_EX.BAS		Programma esempio delle funzioni UBOUND e LBOUND
+
+  UCASE_EX.BAS		Programma esempio della funzione UCASE$
+
+  WINDO_EX.BAS		Programma esempio dell'istruzione WINDOW

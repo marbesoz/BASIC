@@ -1,0 +1,425 @@
+                    File "LEGGIMI.DOC"
+       Note per MICROSOFT(R) QuickBASIC versione 4.5, per
+       Personal computer IBM(R), Olivetti(R) e compatibili
+
+             (C) Copyright Microsoft Corporation, 1989
+
+             Benvenuti al Microsoft QuickBASIC 4.50
+
+   QUESTO FILE CONTIENE IMPORTANTI INFORMAZIONI SULLA VERSIONE 4.5
+   DEL MICROSOFT(R) QuickBASIC. SI PREGA DI LEGGERE L'INTERO FILE
+   PRIMA DI USARE QuickBASIC.
+
+
+
+-------------Qualche indicazione prima di iniziare:-------------------------
+
+
+     1. Per installare Microsoft QuickBASIC, digitare "INSTALLA".
+
+     2. Per una rapida esercitazione pratica sull'uso del nuovo
+        ambiente Microsoft QuickBASIC 4.5, digitare "ESERCITA".
+
+     3. Per una completa lista dei file inclusi nella confezione
+        MS QB 4.5 e una breve descrizione di ciascun file, leggere
+        il file FILE.LST sul disco "Installazione/QB Express".
+
+     4. Prima di avviare QuickBASIC, per alcune configurazioni hardware
+        Š necessario installare il programma FIXKEYB.COM incluso nella
+        confezione QuickBASIC. Riferirsi alla parte 7 qui sotto.
+
+----------------------------------------------------------------------------
+
+Questo file ha sette parti:
+
+  PARTE      CONTENUTO
+
+
+  1          Informazioni su aggiunte e modifiche al manuale
+             L'ambiente di programmazione Microsoft QuickBASIC
+
+  2          Informazioni su aggiunte e modifiche al manuale
+             Programmare in BASIC
+
+  3          Uso del Mouse con QuickBASIC
+
+  4          Ulteriori informazioni sulla programmazione a linguaggi misti
+
+  5          Uso di Btrieve con QuickBASIC
+
+  6          Uso del patch DOS 3.2 per la precisione matematica
+
+  7          Informazioni varie sull'uso di QuickBASIC
+
+===< Parte 1: L'ambiente di programmazione Microsoft QuickBASIC >
+
+        Pagina 8.10   Al punto 4, la riga "CASE CHR$(FINE)" (la
+                      settima riga CASE sotto il punto 4) Š errata;
+                      dovrebbe essere "CASE CHR$(TSTFINE)".
+
+        Pagina 8.11   Nell'immissione 23 in fondo alla pagina, i simboli
+                      di sottolineatura ("_") non vanno digitati: essi
+                      indicano semplicemente al lettore di non andare a capo:
+                      in ciascun caso infatti la riga seguente va digitata
+                      sulla stessa riga, senza soluzione di continuit….
+
+===< Parte 2: Programmare in BASIC >
+
+        Nessuna informazione in questa parte
+
+===< Parte 3: Uso del Mouse con QuickBASIC >
+
+--------------< Nuovo driver del mouse per uso con QuickBASIC >-------------
+
+        QuickBASIC versione 4.5 si pu• usare con qualunque mouse compatibile
+        al 100% con il Microsoft Mouse. Sar… necessario per• usare la
+        versione 6.00 o successiva del driver Microsoft Mouse. Versioni
+        precedenti potrebbero portare a risultati imprevedibili se usate con
+        QuickBASIC. MOUSE.COM, versione 6.24, Š incluso nella confezione
+        QuickBASIC versione 4.5.
+
+        Specialmente per la stesura di programmi che usano il mouse, in
+        ambiente QuickBASIC si raccomanda di usare la versione del driver
+        del mouse qui fornita. Versioni precedenti includevano MOUSE.SYS,
+        installato includendo la riga DEVICE=MOUSE.SYS nel proprio file
+        CONFIG.SYS. La presente versione di QuickBASIC include MOUSE.COM,
+        che non si intalla con CONFIG.SYS. Per installare MOUSE.COM, digitare
+        MOUSE al sollecito DOS. Per includere MOUSE.COM automaticamente all'
+        avvio del sistema, assicurarsi che MOUSE.COM sia nel percorso di
+        ricerca, e inserire la riga
+
+                MOUSE
+
+        nel proprio file AUTOEXEC.BAT. Per liberare dello spazio memoria,
+        Š poi possibile disattivare il driver del mouse in qualsiasi momento,
+        digitando MOUSE OFF al sollecito DOS. Questo render… nuovamente
+        disponibile dai 9K ai 10,5K di memoria nella versione 6.11.
+
+--------< Uso di chiamate alle funzioni del mouse da programmi QuickBASIC >-
+
+        Per stendere programmi che utilizzano il Microsoft Mouse, si
+        raccomanda di ottenere il manuale Microsoft Mouse Programmer's
+        Reference Guide e la libreria MOUSE.LIB inclusa col manuale.
+        (Questi non sono inclusi nella confezione di QuickBASIC n‚ in quella
+        del Mouse e vanno acquistati a parte). La maggior parte delle
+        informazioni nel Mouse Programmer's Reference Guide Š utilizzabile
+        nel QuickBASIC versione 4.5 senza alcuna modifica; le seguenti
+        ulteriori condizioni vanno per• osservate:
+
+        Per alcune chiamate di funzioni del Mouse (funzioni 9 e 16), Š
+        necessario impostare una matrice di interi e passare l'indirizzo
+        della matrice al driver del mouse. In versioni precedenti, l'unica
+        condizione sulla matrice era che essa doveva essere $STATIC (il tipo
+        predefinito delle matrici). In QuickBASIC versione 4.5, per•, la 
+        matrice deve inoltre essere in un blocco COMMON se la chiamata alla
+        funzione del mouse avverr… dall'interno dell'ambiente QuickBASIC.
+        Inoltre, per chiamate di funzioni mouse dall'interno di QuickBASIC,
+        si raccomanda che il codice di supporto della chiamata al mouse si
+        trovi in una libreria Quick o sia linkato al file eseguibile.
+
+        Per creare una libreria Quick per gestire chiamate alle funzioni
+        del mouse dall'interno dell'ambiente QuickBASIC, usare la riga di
+        comando seguente (che genera MOUSE.QLB):
+
+                LINK MOUSE.LIB/QU,MOUSE.QLB,,BQLB40.LIB/NOE;
+
+        Un esempio da PIANO.BAS (incluso nel Microsoft Mouse Programmer's
+        Reference) dell'uso di una chiamata alla funzione 9 del mouse:
+
+                DEFINT A-Z
+                DECLARE SUB MOUSE (M1, M2, M3, M4)
+                DIM Cursore(15, 1)
+                COMMON Cursore() 'Garantisce che i dati della
+                .                'matrice siano in DGROUP
+                . (impostare Cursore() alla forma
+                .  desiderata per il cursore del mouse)
+                M1 = 9: M2 = 6: M3 = 0
+                CALL MOUSE(M1, M2, M3, VARPTR(Cursore(0, 0)))
+
+        Inoltre, notare che le chiamate alle funzioni del mouse 21-23
+        richiedono spazio allocato dinamicamente dal segmento dati di base.
+        Il miglior modo di ottenere ci• Š di allocare spazio in una variabile
+        a stringa dinamica a seconda del valore restituito dalla funzione 21,
+        usando la funzione STRING$ o SPACE$. Poi usare VARPTR sulla variabile
+        a stringa subito prima di chiamare la funzione del mouse 22 o 23.
+
+===< Parte 4: Ulteriori informazioni sulla programmazione a linguaggi misti >
+
+--------------< Linkaggio dall'interno di QuickC o con QCL >----------------
+
+        Microsoft QuickC e il comando QCL impostano l'opzione /NOI del link
+        per predefinizione. Non si deve perci• eseguire il link dall'interno
+        di QuickC, o con QCL, se il programma contiene moduli scritti in un
+        linguaggio che non distingue tra maiuscole e minuscole, come il
+        BASIC. Usare LINK per collegare il programma dalla riga di comando.
+
+--------------< Moduli Pascal e Fortran in programmi QuickBASIC >-----------
+
+        Moduli compilati con Microsoft Pascal o Fortran possono essere
+        linkati con programmi BASIC, come descritto nella Microsoft
+        Mixed-Language Programming Guide. Essi possono anche essere inclusi
+        in librerie Quick. In ogni caso per•, programmi QuickBASIC
+        contenenti codice compilato con Microsoft Pascal devono allocare
+        almeno 2K di memoria di tipo NEAR per Pascal. Questo si pu• fare
+        usando un'istruzione DIM per allocare una matrice statica di almeno
+        2K nel blocco common di nome NMALLOC, per esempio, come segue:
+
+        DIM nome%(2048)
+        COMMON SHARED /NMALLOC/ nome%()
+
+        Il Pascal durante l'esecuzione presuppone sempre la presenza di
+        almeno 2K di memoria NEAR disponibile. Se il codice Pascal non pu•
+        allocare lo spazio necessario, QuickBASIC potrebbe crollare. Queste
+        considerazioni sono valide per il codice Pascal in librerie Quick e
+        per il codice Pascal collegato a file eseguibili. La situazione Š
+        simile per l'I/O Fortran, che pure richiede spazio buffer di tipo
+        NEAR, che pu• essere fornito alla stessa maniera che per lo spazio
+        NEAR malloc di Pascal.
+
+--------------< Allocazione matrici STATIC >--------------------------------
+
+        Per la scrittura di moduli in linguaggio assembler in programmi
+        QuickBASIC, vedere la sezione 2.3.3, "Variable Storage Allocation,"
+        nel BASIC Language Reference. Codice in linguaggio assembler non
+        deve presumere in quale segmento siano i dati. Per evitare problemi,
+        passare i dati usando le parole chiave SEG o CALLS, o usare
+        puntatori di tipo FAR. Come alternativa, si possono dichiarare
+        dinamiche tutte le matrici (sempre usando puntatori di tipo FAR),
+        dato che le matrici dinamiche sono gestite allo stesso modo da BC
+        e all'interno di QuickBASIC.
+
+----------< Librerie Quick con zeri iniziali nel primo segmento di codice >-
+
+        Una libreria Quick con zeri iniziali nel primo segmento CODE non Š
+        valida, e causa il messaggio "Errore nel caricare il file <nome> -
+        Formato non valido" se si cerca di caricarla in QuickBASIC. Per
+        esemio, questo pu• succedere se una routine in linguaggio assembler
+        inserisce dati azzerati nel primo segmento CODE, ed Š poi elencata
+        per prima sulla riga di comando LINK quando viene creata la libreria
+        Quick. Se si riscontra questo problema, ci sono due alternative:
+        (1) eseguire il link con un modulo BASIC per primo sulla riga di
+        comando LINK, oppure
+        (2) accertarsi che nel modulo citato per primo sulla riga di comando
+        LINK il primo segmento di codice inizi con un byte diverso da zero.
+
+--------------< Referimenti a DGROUP nei moduli di esecuzione estesi >-------
+
+        Per programmi a linguaggi misti che usano il comando CHAIN,
+        accertarsi che nel codice integrato in un modulo di esecuzione esteso
+        non ci siano riferimenti a DGROUP. (Il comando CHAIN causa uno
+        spostamento di DGROUP, senza per• aggiornare i riferimenti a DGROUP.)
+        Questa regola Š valida solo per programmi a linguaggi misti; le
+        routine BASIC non fanno mai riferimenti a DGROUP, e quindi per
+        programmi interamente in linguaggio BASIC il problema non sorge.
+
+        Per evitare questo problema, si pu• usare il valore di SS, perch‚
+        il BASIC presuppone che SS coincida con DGROUP.
+
+===< Parte 5: Uso di Btrieve >
+
+--------------< Uso di Btrieve in modalit… protetta OS/2 >------------------
+
+        In modalit… protetta OS/2, un programma BASIC che usa Btrieve deve
+        eseguire una chiamata di reimpostazione Btrieve (funzione 28) prima
+        di eseguire l'istruzione CHAIN.
+        Il programma deve anche riaprire tutti i file Btrieve quando il
+        programma chiamato da CHAIN inizia l'esecuzione.
+
+--------------< Uso di Btrieve con QuickBASIC >-----------------------------
+
+        Per usare Btrieve con QuickBASIC, Š necessaria una piccola modifica
+        ai programmi per la versione 4.5 di QuickBASIC. Programmi per le
+        versioni precedenti contengono un'istruzione che ottiene l'indirizzo
+        del buffer di campo di un file aperto. Per esempio:
+
+            OPEN "NUL" AS #1
+            FIELD #1, 20 AS CITTA$, 10 AS PROV$
+            FCB.INDR% = VARPTR(#1)  'Questa istruzione ottiene l'indirizzo
+
+        Per QuickBASIC versione 4.5, modificare l'istruzione indicata perch‚
+        restituisca l'indirizzo della prima variabile nel buffer di campo
+        meno una costante, come segue:
+
+            OPEN "NUL" AS #1
+            FIELD #1, 20 AS CITTA$, 10 AS PROV$
+            FCB.INDR% = SADD(CITTA$) - 188 ' CITTA$ Š la prima variabile
+                                           ' nel buffer di campo
+
+        L'esempio seguente mostra come ottenere lo stesso indirizzo con un
+        tipo definito dall'utente:
+
+            TYPE INDIRIZZO
+                CITTA AS STRING * 20
+                PROV AS STRING * 10
+            END TYPE
+
+            DIM IND1 AS INDIRIZZO
+
+            FCB.INDR% = VARPTR(IND1) - 188
+            ' oppure, usare FCB.INDR% = VARPTR(IND1.CITTA) - 188
+
+        I programmi useranno correttamente Btrieve dopo queste modifiche.
+
+===< Parte 6: Patch DOS 3.20 >
+
+Queste informazioni sono valide solo per i sistemi con TUTTE le seguenti
+caratteristiche:
+
+    1.  Utilizzo di MS-DOS versione 3.20
+    2.  Avvio da unit… a disco fisso
+    3.  Presenza di un coprocessore matematico (per esempio, di un chip 8087)
+    4.  Esecuzione di programmi con aritmetica in virgola mobile
+
+Per sistemi con tutte le caratteristiche precedenti, si possono eliminare
+alcuni problemi con l'aritmetica in virgola mobile installando un piccolo
+patch in DOS. Se si Š incerti se il patch pu• servire, eseguire la seguente
+procedura:
+
+    1.  Copiare il programma PATCH87.EXE (incluso nella confezione) alla
+        directory principale del disco fisso.
+
+    2.  Riavviare il sistema dal disco fisso, e NON ESEGUIRE ALCUNA
+        OPERAZIONE CON DISCHI FLOPPY dopo il riavviamento. E' molto
+        importante evitare operazioni di I/O su dischi floppy dopo aver
+        riavviato il sistema, perch‚ queste possono invalidare i risultati
+        del test diagnostico che si sta per eseguire.
+
+    3.  Se necessario, usare il comando CD per portarsi alla directory
+        principale del disco fisso.
+
+    4.  Eseguire il programma PATCH87.EXE digitando al sollecito del DOS:
+
+            PATCH87
+
+    5.  Il programma fa una diagnosi del sistema per stabilire se Š
+        necessario il patch del DOS, e, in caso positivo, se questo pu•
+        essere installato. Se il programma indica che Š necessario eseguire
+        il patch del DOS, e che Š possibile, eseguire la procedura elencata
+        ai punti seguenti.
+
+    NOTE: I problemi con la virgola mobile sono stati eliminati nelle
+    versioni del MS-DOS successive alla 3.20, incluse quindi le versioni
+    MS-DOS 3.21 e 3.30.
+
+Se il risultato del test precedente indica di installare il patch DOS sul
+proprio sistema, eseguire la seguente procedura:
+
+    1.  Formattare un dischetto. (NON usare l'opzione di formattazione /s
+        per trasferire i file di sistema al disco.)
+
+    2.  Usare il commando SYS per copiare IO.SYS e MSDOS.SYS dalla directory
+        principale del disco fisso al dischetto. Per esempio, se si avvia
+        il sistema dall'unit… C:, si digiterebbero i comandi seguenti:
+
+            C:
+            SYS A:
+
+    3.  Usare il comando COPY per copiare COMMAND.COM e SYS.COM allo
+        stesso dischetto.
+
+    4.  Usare il comando COPY per copiare il programma PATCH87.EXE (incluso
+        nella confezione) allo stesso dischetto.
+
+    5.  Cambiare l'unit… e la directory corrente al dischetto digitando:
+
+            A:
+
+    7.  Installare il patch del DOS digitando il comando seguente:
+
+            PATCH87 /F
+
+        AVVERTENZA: Se avviene qualsiasi errore disco durante l'esecuzione
+        dei punti da 2 a 7, NON procedere al punto 8. Riavviare invece il
+        sistemadal disco fisso e ricominciare da capo l'intera procedura.
+
+    8.  Se non Š avvenuto alcun errore, usare il comando SYS per trasferire
+        i file IO.SYS e MSDOS.SYS dal dischetto alla directory principale
+        del disco fisso. Per esempio, se la directory di avviamento del
+        sistema Š la directory principale dell'unit… C:, digitare il comando
+        seguente al sollecito DOS:
+
+            A:
+            SYS C:
+
+    9.  Il patch DOS Š stato installato. Riavviare il sistema.
+
+===< Parte 7: Informazioni varie sull'uso di QuickBASIC >
+
+--------------< Uso del programma di utilit… FIXKEYB.COM >------------------
+
+        Se la configurazione in uso include una tastiera avanzata, un
+        computer pi— vecchio di due anni il cui BIOS non supporta i tasti
+        avanzati, e un driver di tastiera DOS, le seguenti informazioni sono
+        molto importanti. Pu• infatti succedere che il sistema si blocchi
+        dopo l'avvio di QuickBASIC. In questo caso, Š necessario riavviare
+        il sistema (CTRL+ALT+CANC) per ovviare al problema.
+
+        FIXKEYB.COM, un programma TASR incluso nella confezione QuickBASIC
+        (nel disco Utilit… oppure nel disco Utilit… 2) e che occupa 256 byte
+        in memoria, elimina questo problema. Finch‚ non viene scelta
+        l'opzione /i, FIXKEYB.COM non viene installato. Inserire il disco
+        contenente FIXKEYB.COM nell'unit… A: e digitare
+
+           a:fixkeyb
+
+        al prompt del DOS; il programma indicher… se installare o meno
+        FIXKEYB.COM (la risposta per• non Š attendibile al 100%; in ogni
+        caso, se il sistema si blocca all'avvio di QuickBASIC, installare
+        FIXKEYB.COM). In caso positivo, copiare FIXKEYB.COM nella directory
+        contenente i file di sistema DOS, e digitare
+
+           fixkeyb /i
+
+        L'installazione di FIXKEYB.COM deve avvenire dopo l'installazione
+        del driver della tastiera e prima dell'avvio di QuickBASIC. Se
+        FIXKEYB.COM Š gi… installato, apparir… un messaggio in tale senso.
+
+        Dopo aver installato FIXKEYB.COM, si noteranno alcuni cambiamenti
+        nel comportamento della tastiera. Se Š attivato BLOC NUM, non si
+        potranno usare le combinazioni MAIUSC+SINISTRA e MAIUSC+DESTRA per
+        evidenziare il testo. Se non Š attivato, i tasti funzioneranno come
+        descritto nella documentazione QuickBASIC. Inoltre, se BLOC NUM Š
+        attivato, non si potranno usare MAIUSC+INS e MAIUSC+CANC.
+
+        Se l'installazione di FIXKEYB.COM Š indicata, andr… fatta dopo ogni
+        avviamento del DOS; sar… utile includere il comando "FIXKEYB /i" nel
+        proprio file AUTOEXEC.BAT, assicurandosi per• che il comando venga
+        eseguito dopo l'installazione del driver della tastiera. I messaggi
+        del programma si possono eliminare usando la forma "FIXKEYB /i > nul".
+
+--------------< Uso del programma di utilit… FIXSHIFT.COM >-----------------
+
+        Alcune tastiere hanno tasti di DIREZIONE (freccie) in pi—, oltre a
+        quelle sul tastierino numerico. Un errore nel BIOS ROM su alcune
+        macchine con queste tastiere pu• interferire con l'editor QuickBASIC.
+        Il disco Utilit… 2 include un programma, FIXSHIFT.COM, che elimina
+        tale errore. Se si possiede una di queste tastiere, eseguire il
+        programma digitando FIXSHIFT. Se il computer non ha questo errore,
+        FIXSHIFT notifica l'utente. Altrimenti FIXSHIFT sollecita le azioni
+        richieste. FIXSHIFT richiede circa 450 byte di spazio memoria, e si
+        limita a correggere l'errore BIOS; non ha effetto su altri programmi.
+
+--------------< Note sulla scheda VGA >-------------------------------------
+
+        Se si installa una scheda IBM (R) Personal System/2 (TM) Video
+        Graphics Array (VGA) in una macchina non PS/2, la scheda VGA deve
+        essere l'unica scheda video nel system, non si devono usare le
+        modalit… monocromatiche (SCREEN 10) se si ha un monitor a colori,
+        n‚ le modalit… a colori (SCREEN 1, 2, 7, 8, 9, 11, 12, 13) se si
+        ha un monitor monocromatico.
+
+--------------< Note sull'uso di QuickBASIC con DOS 2.1 >---------------------
+
+        Per usare QuickBASIC con un sistema a due unit… disco floppy con
+        DOS 2.1, Š necessario mettere una copia di COMMAND.COM su ciascun
+        dischetto contenente file eseguibili (file con estensione .EXE).
+
+--------------< PTR86, LOF, nomi di procedure SUB e di variabili >-----------
+
+        PTR86 non Š pi— supportato. Usare invece VARSEG e VARPTR. Inoltre,
+        quando usato con una periferica per comunicazioni, LOF ora
+        restituisce la quantit… di spazio rimanente (in byte) nel buffer di
+        output. In versioni precedenti, veniva restituita la quantit… nel
+        buffer di input. Inoltre, notare che in versioni precedenti, una
+        variabile e una procedura SUB potevano avere lo stesso nome. Nella
+        versione 4.5, questo invece genera l'errore "Duplice definizione".
