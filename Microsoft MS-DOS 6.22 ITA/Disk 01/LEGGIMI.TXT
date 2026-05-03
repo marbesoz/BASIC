@@ -1,0 +1,1444 @@
+LEGGIMI.TXT
+
+NOTE SU MS-DOS 6.22
+===================
+
+Questo file fornisce alcune importanti informazioni non
+contenute nel Manuale dell'utente di Microsoft MS-DOS
+nÇ nella Guida in linea.
+
+Di seguito vengono elencate le sezioni principali del file LEGGIMI.TXT:
+
+1. Programma di installazione
+2. MemMaker, EMM386, e gestione della memoria
+3. Windows
+4. CompatibilitÖ hardware con MS-DOS 6.22
+5. Microsoft Backup, Defrag e Anti-Virus
+6. Programmi non Microsoft
+7. DriveSpace
+
+Se l'argomento sul quale si desidera avere delle informazioni non ä 
+incluso nel file LEGGIMI.TXT, ä possibile trovarlo in uno dei seguenti 
+file di testo forniti con MS-DOS:
+
+* OS2.TXT, descrive le modalitÖ di eliminazione e di salvataggio dei dati
+  quando si sostituisce OS/2 con MS-DOS 6.22
+
+* RETI.TXT, descrive le modalitÖ di aggiornamento del software di 
+  rete per l'utilizzo con MS-DOS 6.22
+
+* PAESI.TXT, descrive i miglioramenti alle tastiere internazionali e al 
+  supporto delle tabelle codici (set di caratteri) incluso in MS-DOS 6.22.
+
+Per informazioni relative alle nuove caratteristiche, digitare 
+HELP WHATSNEW al prompt dei comandi.
+
+Nel file LEGGIMI.TXT vengono trattati i seguenti argomenti:
+
+1. Programma di installazione
+   1.1  Sono stati eliminati dalla directory i file necessari al programma
+	di installazione per installare i programmi opzionali di Windows
+   1.2  Modifiche alle tastiere supplementari e supporto della tabella codici
+2. MemMaker, EMM386 e gestione della memoria
+   2.1  Driver di memoria espansa Intel (EMM.SYS)
+   2.2  Esecuzione di MemMaker su un computer su cui ä installato PC-NFS
+   2.3  Si dispone di una Super VGA e si desidera risparmiare memoria
+   2.4  Utilizzo di MemMaker con IBM LAN
+   2.5  MemMaker e le periferiche Adaptec SCSI
+   2.6  Esecuzione di MemMaker su un computer sul quale ä installato PC Tools RAMBoost
+   2.7  EMM386 rileva un errore in un'applicazione
+   2.8  MemMaker non esamina pió l'area di memoria superiore ottimizzata 
+	per impostazione predefinita
+3. Windows
+   3.1  Il computer utilizza un file di scambio permanente di Windows 3.0
+   3.2  Utilizzo di dischi floppy compressi con File Manager di Windows
+4. CompatibilitÖ hardware con MS-DOS 6.22
+   4.1  Hardcard
+5. Microsoft Backup, Defrag e Anti-Virus
+   5.1  Microsoft Anti-Virus
+   5.2  Esecuzione di Microsoft Backup per MS-DOS in Windows
+   5.3  Backup per Windows si interrompe alla fine
+	del test di compatibilitÖ
+   5.4  Esecuzione di Microsoft Backup con computer TI4000 e Gateway NOMAD
+   5.5  Utilizzo di Backup per MS-DOS 6.22 per ripristinare i backup delle 
+	versioni 6 o 6.2
+   5.6  Microsoft Defrag
+6. Programmi non Microsoft
+   6.1  4DOS e NDOS
+   6.2  Programmi di installazione Above Board 286 
+	e Above Board Plus
+   6.3  CodeView
+   6.4  Colorado Tape Backup
+   6.5  Fastback Plus
+   6.6  Norton Desktop per Windows 2.0
+   6.7  Norton Utilities
+   6.8  PC Tools
+   6.9  Stealth DoubleSpace di QEMM
+   6.10 Johnson Computer Systems PC-Vault e PC-Vault Plus
+   6.11 AddStor DoubleTools
+7. DriveSpace
+   7.1  Conversione delle unitÖ DoubleSpace a DriveSpace
+   7.2  Conversione del programma di compressione XtraDrive
+	a DriveSpace
+   7.3  Conversione di Stacker 3.1 a DriveSpace
+   7.4  Conversione di altri programmi di compressione a DriveSpace
+   7.5  Il programma di installazione di DriveSpace indica che il computer 
+	sta eseguendo un programma di caching non compatibile.
+   7.6  L'unitÖ compressa ha esaurito lo spazio su disco
+   7.7  L'unitÖ non compressa ha esaurito lo spazio su disco
+   7.8  DriveSpace non ha compresso tutti i file per mancanza di spazio
+	su disco
+   7.9  Windows visualizza il messaggio: "Il file di scambio permanente
+	ä danneggiato"
+   7.10 EXTDISK.SYS visualizza un messaggio di errore relativo alle
+	lettere di unitÖ
+   7.11 L'utilizzo dell'unitÖ di avvio compressa richiede un driver di
+	periferica speciale
+   7.12 Compattazione delle unitÖ non compresse dopo aver modificato 
+	gli attributi dei file
+   7.13 File che DriveSpace non puï comprimere
+   7.14 Defrag ha esaurito la memoria durante la compressione di
+	un'unitÖ
+   7.15 DriveSpace e PC-Vault
+   7.16 Dimensione massima di un'unitÖ compressa
+   7.17 DriveSpace non ä in grado di installare un'unitÖ
+   7.18 DriveSpace termina l'installazione ma non riesce ad accedere
+	all'Hardcard.
+   7.19 Viene visualizzato un messaggio di DoubleGuard Alarm
+   7.20 Un'unitÖ compressa ä correntemente troppo frammentata per 
+	l'installazione
+   7.21 Appare il messaggio "Il computer sta eseguendo una versione 
+	non compatibile di DBLSPACE.BIN" 
+   7.22 Uso del comando DRVSPACE dopo aver evitato DRVSPACE.BIN
+   7.23 Rimozione della protezione dalla scrittura da un disco floppy 
+	compresso
+   7.24 Autoinstallazione e Norton Disk Cache
+   7.25 UtilitÖ undelete e DriveSpace
+   7.26 Creazione di un disco di avvio di emergenza per i sistemi DriveSpace
+   7.27 ScanDisk non ä in grado di esaminare o riparare un volume DriveSpace
+
+
+1. PROGRAMMA DI INSTALLAZIONE
+==============================
+
+1.1 Sono stati eliminati dalla directory i file necessari al programma
+    di installazione per installare i programmi opzionali di Windows
+-----------------------------------------------------------------------
+Se ä stato digitato BUSETUP /E al prompt dei comandi, se il programma 
+di installazione ha visualizzato il messaggio "Il programma di 
+installazione non ha trovato i file necessari nella directory 
+specificata" e se si pensa di aver eliminato i file dal disco rigido, 
+inserire il disco "Disco 1 - Installazione" nell'unitÖ A o B e digitare 
+A:SETUP /E oppure B:SETUP /E
+
+1.2 Modifiche alle tastiere supplementari e supporto della tabella codici
+---------------------------------------------------------------------------
+MS-DOS 6.22 include i nuovi file di informazioni sulle tabelle codici 
+EGA2.CPI, EGA3.CPI  e ISO.CPI, oltre al nuovo file KEYBRD2.SYS, che permette 
+di utilizzare altre tastiere. MS-DOS include anche le nuove impostazioni di 
+paese nel file COUNTRY.SYS.
+
+Per ulteriori dettagli sui miglioramenti alle tastier internazionali e al 
+supporto per la tabella codici (set di caratteri), vedere il file COUNTRY.TXT, 
+che si trova nella directory di MS-DOS.
+
+
+2. MEMMAKER E GESTIONE DELLA MEMORIA
+====================================
+
+2.1 Driver di memoria espansa Intel (EMM.SYS)
+---------------------------------------------
+Se si utilizza il driver EMM.SYS della Intel con Aboveboard, si consiglia 
+installare EMM.SYS versione 4.0 revisione E, se si dispone di un sistema ISA
+o EMM.SYS versione 4.0 revisione D, se si dispone di un sistema MCA o un altro 
+sistema. Contattare il proprio rivenditore Intel per un aggiornamento 
+gratuito.
+
+2.2 Esecuzione di MemMaker su un computer su cui ä installato PC-NFS
+-----------------------------------------------------------------------
+Se viene utilizzato un software di rete PC-NFS, attenersi alla seguente
+prima di eseguire MemMaker:
+
+1. Aprire il file MEMMAKER.INF utilizzando un editor di testo. Il file
+   si trova nella directory che include i file di MS-DOS.
+
+2. Aggiungere la seguente riga al file:
+
+   *NET
+
+3. Salvare il file, quindi eseguire MemMaker.
+
+2.3 Se si dispone di una Super VGA e si desidera risparmiare memoria.
+------------------------------------------------------------------------
+
+Se si utilizza Microsoft Windows su un computer che dispone di un processore 
+80386, memoria estesa e monitor Super VGA, ä possibile utilizzare il file 
+MONOUMB.368 in combinazione con MemMaker in modo da conservare la memoria 
+convenzionale per i programmi in funzione.
+
+Per risparmiare memoria se si dispone di una scheda Super VGA:
+
+1. Aprire il file SYSTEM.INI ed individuare la sezione [386Enh].
+
+2. Aggiungere un comando DEVICE per il file MONOUMB.386 presente nella 
+   directory MS-DOS. Se ad esempio i file di MS-DOS si trovano in C:\DOS, 
+   aggiungere alla sezione la riga che segue:
+
+   DEVICE=C:\DOS\MONOUMB.386
+
+3. Salvare il file e riavviare il computer
+  
+4. Rieseguire MemMaker digitando MEMMAKER al
+   prompt dei comandi.
+
+5. Scegliere Installazione Personalizzata. Nella schermata delle opzioni 
+   avanzate rispondere Sç alla domanda "Utilizzare regione monocromatica 
+   (B000-B7FF) per l'esecuzione dei programmi?"
+  
+   Seguire le istruzioni visualizzate.
+
+2.4 Utilizzo di MemMaker con IBM LAN
+------------------------------------
+Prima di poter utilizzare MemMaker, sarÖ necessario impostare determinati
+valori all'interno del driver di supporto della rete IBM LAN, DXMC0MOD.SYS. 
+Nel file CONFIG.SYS, assicurarsi che il comando DEVICE relativo a 
+DXMC0MOD.SYS includa i seguenti parametri:
+
+o I primi tre parametri come nell'esempio che segue:
+
+  DEVICE=C:\DXMC0MOD.SYS 400000000001,D800,1
+
+o Nessun parametro:
+
+  DEVICE=C:\DXMC0MOD.SYS
+
+o Alcuni parametri ed un numero di virgole sufficiente a riempire i primi 
+  tre parametri, come nell'esempio che segue:
+
+  DEVICE=C:\DXMC0MOD.SYS 400000000001,,
+
+2.5 MemMaker e periferiche Adaptec SCSI
+---------------------------------------
+MemMaker ä compatibile con le periferiche Adaptec SCSI. Se si utilizza 
+il driver ASPI4DOS.SYS per supportare la periferica SCSI, tuttavia, 
+MemMaker escluderÖ automaticamente questo driver dal processo di 
+ottimizzazione. Se non si usa la periferica SCSI all'avvio o come unitÖ 
+di avvio, ä possibile includere il driver ASPI4DOS.SYS nel processo di 
+ottimizzazione. Per eseguire questa operazione, rimuovere la voce ^ASPI4DOS 
+dal file MEMMAKER.INF, quindi eseguire MemMaker.
+
+2.6 Utilizzo di MemMaker su un computer sul quale ä installato PC Tools o 
+    PC-DOS RAMBoost
+-------------------------------------------------------------------------
+E' possibile utilizzare MemMaker o RAMBoost con MS-DOS, ma non entrambi 
+i programmi contemporaneamente. MemMaker impedirÖ il caricamento di RAMBoost. 
+Il comando DEVICE= non verrÖ tuttavia rimosso dal file CONFIG.SYS.
+
+2.7 EMM386 rileva un errore in un'applicazione
+----------------------------------------------
+Se EMM386 visualizza un messaggio quale "EMM386 ha trovato l'errore 
+#12 in un'applicazione" significa che il processore ha comunicato ad EMM386 
+l'esistenza di un errore. Un errore di eccezione si verifica in genere quando 
+un'applicazione invia al processore un'istruzione non valida o imprevista. 
+Nella maggior parte dei casi, questi errori si verificano soltanto con 
+programmi specifici. Se un errore si verifica solo con una determinata 
+applicazione, potrebbe essere causato da un driver di periferica o da un 
+programma residente in memoria.
+
+Per evitare questi errori:
+
+  o  Cercare il programma che causa l'errore. Per eseguire questa operazione, 
+     controllare se l'errore si verifica anche quando il programma non ä in 
+     funzione. Se si pensa che l'errore sia causato da un programma residente 
+     in memoria o da un driver di periferica, provare ad aggirarlo durante 
+     l'avvio del computer.
+
+  o  Disattivare EMM386. Se l'errore ä causato da un'applicazione specifica,
+     verrÖ visualizzato un messaggio di errore. 
+     Talvolta, la disattivazione di EMM386 provoca la riconfigurazione della 
+     memoria.In tal caso, il problema potrebbe risolversi automaticamente.
+
+  o  Provare a modificare l'ordine nel quale vengono caricati i driver di 
+     periferica ed i programmi residenti in memoria. Alcuni errori infatti 
+     si verificano solo in presenza di determinate condizioni di memoria.
+
+  o  Se si verifica l'errore 12, significa che uno stack viene utilizzato 
+     in modo errato. Provare ad aggiungere il seguente comando al file 
+     CONFIG.SYS:
+
+	STACKS=18,512
+
+  o  Se si verifica l'errore 13, significa che il programma sta cercando di 
+     utilizzare una modalitÖ protetta senza cooperare con EMM386. In questo 
+     caso, ä necessario procurarsi una versione del programma VCPI oppure 
+     evitare di caricare EMM386 durante l'utilizzo dell'applicazione.
+
+2.8  MemMaker non esamina pió l'area di memoria superiore ottimizzata 
+     per impostazione predefinita
+----------------------------------------------------------------------
+Per impostazione predefinita, la versione MS-DOS 6.22 di MemMaker non esegue 
+la scansione della memoria superiore. Al contrario, l'opzione di MemMaker 
+"Esaminare l'area di memoria superiore ottimizzata?" ä impostata su No e 
+MemMaker limita la ricerca di UMB disponibili agli indirizzi di memoria da 
+C600 a EFFF. Al contrario, la versione di MS-DOS 6 di Memmaker esaminava 
+l'area di memoria superiore, per impostazione predefinita: oltre alla 
+scansione della memoria nell'intervallo compreso tra C600 e EFFF, esaminava 
+anche gli indirizzi nell'intervallo compreso tra F000 e F7FF.
+
+Per aumentare la memoria disponibile per l'esecuzione dei programmi, eseguire 
+MemMaker in modalitÖ personalizzata e cambiare l'opzione "Esaminare l'area
+di memoria superiore ottimizzata?" in Sç. (Su alcuni computer, lo spostamento
+di UMB in questo intervallo impedisce l'avvio del computer).
+
+Nota: Se l'ultima volta ä stato eseguito MemMaker con l'opzione "Esaminare 
+      l'area di memoria superiore ottimizzata?" impostata su Sç, la prossima 
+      volta che si esegue MemMaker, lascia l'impostazione impostata su Sç.
+
+
+3. WINDOWS
+==========
+
+3.1 Il computer utilizza un file di scambio permanente di Windows 3.0.
+-----------------------------------------------------------------------
+Se il computer utilizza un file di scambio permanente di Windows 3.0, ä 
+necessario eseguire il programma SPATCH.BAT per rendere il file di scambio 
+compatibile con MS-DOS 6. Per eseguire questa operazione, attenersi alla 
+seguente procedura:
+
+1. Assicurarsi che il programma SPATCH.BAT si trovi sul disco rigido. 
+   Per determinare la posizione del file sui dischi di installazione, 
+   aprire il file PACKING.LST sul disco "Disco 1 - Installazione".
+
+2. Digitare il seguente comando al prompt:
+
+   SPATCH [UNIT∑]:[PERCORSO]SWAPFILE.EXE
+  
+   Per i parametri UNIT∑ e PERCORSO, specificare la posizione del file  
+   SWAPFILE.EXE.
+
+3. Seguire le istruzioni visualizzate.
+
+   Il programma modifica il file SWAPFILE.EXE per consentirne l'utilizzo 
+   con MS-DOS 6 e ne salva una copia di backup come SWAPFILE.SAV. Dopo aver 
+   verificato che il file originale funziona correttamente, ä possibile 
+   eliminare SWAPFILE.SAV.
+
+3.2 Utilizzo di dischi floppy compressi con File Manager di Windows
+-------------------------------------------------------------------
+Se si utilizzano dischi floppy compressi con l'autoinstallazione attivata,
+si potrebbero riscontrare dei messaggi di errore o altri problemi durante
+l'utilizzo di File Manager. Per evitare questi problemi, premere due volte
+il tasto F5.
+
+Ad esempio, se si passa da un disco floppy compresso ad uno non compresso,
+il pulsante dell'unitÖ per l'unitÖ host del disco floppy compresso
+rimane finchÇ non si preme due volte il tasto F5.
+
+
+4. COMPATIBILITA HARDWARE CON MS-DOS
+=====================================
+
+4.1 Hardcard
+------------
+Avendo aggiornato il proprio sistema da MS-DOS 6 o 6.22, il sistema utilizza 
+la propria unitÖ Hardcard come unitÖ di avvio. Se si desidera utilizzare 
+DoubleSpace su quell'unitÖ, vedere la sezione 7.18. Per ulteriori informazioni 
+su Hardcard, leggere quanto segue:
+
+a) Hardcard II
+
+   Se non ä possibile utilizzare Plus Development Hardcard II o Hardcard
+   II XL durante l'esecuzione di EMM386.EXE, specificare l'opzione exclude 
+   (x=) per evitare conflitti tra EMM386 e l'indirizzo BIOS della scheda.
+
+   Per configurare EMM386, eseguire MemMaker.
+
+b) Hardcard 40 o Passport
+
+   Se si utilizza Hardcard 40 o un disco Passport rimovibile e nel file 
+   CONFIG.SYS ä stato specificato un comando DEVICE per PLUSDRV.SYS, 
+   disattivare o rimuovere tale comando. Eseguire quindi il programma di 
+   installazione di MS-DOS 6.22. Al termine dell'installazione, riattivare o 
+   ripristinare il comando DEVICE per PLUSDRV.SYS. Assicurarsi che esso 
+   occupi l'ultima riga del file.
+
+c) Se si ha aggiornato il proprio sistema da MS-DOS 6 o 6.2, installato 
+   DoubleSpace sulla propria Hardcard ed ora non ä possibile accedere alla 
+   nuova unitÖ compressa, provare con le seguenti soluzioni:
+
+   1) Aggiungere un comando DRVSPACE /MOUNT al file AUTOEXEC.BAú per 
+      installare il volume compresso sulla Hardcard ad ogni avvio del 
+      computer.
+
+   2) Oppure, assicurarsi che vi sia almeno un driver di periferica 
+      (ad esempio, ANSI.SYS) caricato nel file CONFIG.SYS DOPO il driver 
+      ATDOSXL.SYS ma PRIMA del driver DRVSPACE.SYS.
+
+
+5. MICROSOFT BACKUP, DEFRAG E ANTI-VIRUS
+========================================
+
+5.1 Microsoft Anti-Virus
+------------------------
+Prima di rimuovere un virus da un file di programma, assicurarsi di disporre 
+di una copia di backup. Se infatti rimuovendo il virus si constata che il 
+programma ä danneggiato, occorre reinstallarlo. Se Anti-Virus rileva 
+nuovamente un virus, ä probabile che si tratti di un errore del programma.
+Contattare il rivenditore software per richiedere una versione aggiornata del 
+programma.
+
+5.2 Esecuzione di Microsoft Backup per MS-DOS in Windows
+---------------------------------------------------------
+Mentre si esegue Windows ä consigliabile non eseguire Backup per MS-DOS. Si 
+consiglia di usare Backup per Windows (le copie di backup realizzate con 
+Backup per Window possono essere ripristinate con Backup per MS-DOS).
+Se Backup per Windows non ä installato, consultare la sezione "Configurazione 
+di Anti-Virus, Backup e Undelete per Windows" nel capitolo "Guida 
+introduttiva" del Manuale dell'utente di MS-DOS.
+
+5.3  Backup per Windows si interrompe alla fine del test di compatibilitÖ
+--------------------------------------------------------------------------
+Se Backup per Windows interrompe l'esecuzione al termine del test di 
+compatibilitÖ, ä probabile che sia stato caricato un driver di backup non 
+Microsoft non compatibile nel file SYSTEM.INI. Attenersi alla seguente 
+procedura.
+
+NOTA  Questa procedura disattiva il programma backup non Microsoft.
+
+1. Aprire il file SYSTEM.INI ed individuare la sezione [386Enh].
+
+2. Verificare la presenza di qualsiasi delle seguenti righe in tale sezione:
+			  
+   DEVICE=FASTBACK.386
+   DEVICE=VFD.386                                                     
+   DEVICE=CPBVXD.386
+   DEVICE=VIRWT.386
+
+3. Se una di queste righe viene individuata, farla precedere da un punto e 
+   virgola (;).
+
+4. Salvare il file, riavviare Windows e rieseguire Backup per Windows.
+
+5.4  Esecuzione di Microsoft Backup con computer TI4000 e Gateway NOMAD
+------------------------------------------------------------------------
+Per evitare conflitti tra la caratteristica Turbo e Microsoft Backup per 
+Windows o per MS-DOS, aggiungere un'opzione /L0 al comando DEVICE nel file 
+CONFIG.SYS che carica il file BATTERY.PRO. E' anche possibile digitare 
+SETPOWER /L0 al prompt dei comandi prima di eseguire Microsoft Backup.
+
+5.5  Utilizzo di Backup per MS-DOS 6.22 per ripristinare i backup delle 
+     versioni 6 o 6.2
+------------------------------------------------------------------------
+Come le precedenti versioni di Backup per MS-DOS, i programmi di backup 
+inclusi in MS-DOS 6.22 supportano la compressione dei dati durante il backup.
+I programmi di backup di MS-DOS 6.22 utilizzano tuttavia un formato di 
+compressione diverso dalle precedenti versioni.
+
+La versione di Backup per Windows inclusa in MS-DOS 6.22 (MWBACKUP.EXE) non ä 
+quindi in grado di ripristinare i backup compressi creati con le versioni di 
+Backup di MS-DOS 6 o 6.2. Per ripristinare questi backup ä necessario 
+utilizzare la versione 6.22 di Backup per MS-DOS (MSBACKUP.EXE) oppure le 
+versioni di Backup che hanno creato i backup in questione. 
+
+Backup per MS-DOS versione 6.22 (MSBACKUP.EXE) ä in grado di ripristinare 
+backup compressi in precedenza solo se il sistema dispone di DoubleSpace (se 
+cioä DBLSPACE.BIN ä caricato in memoria). In caso contrario, MSBACKUP non 
+sarÖ in grado di ripristinare vecchi backup. Per ripristinare questi backup, 
+usare la versione di Backup che li ha creati.
+
+MSBACKUP.EXE e MWBACKUP.EXE possono entrambi ripristinare i backup eseguiti 
+con le versioni 6 o 6.2 se i dati non sono stati compressi. Se l'opzione 
+Comprimi dati di backup nella finestra di dialogo Opzioni di backup non era 
+stata attivata prima dell'esecuzione dei backup, il ripristino non dovrebbe 
+dare problemi.
+
+Ripristino di una versione precedente di Microsoft Backup
+----------------------------------------------------------
+L'installazione di MS-DOS 6.22 installa la versione 6.22 dei programmi di 
+Backup. Le seguenti procedure spiegano come reinstallare le versioni 6 o 6.2 
+di Backup per MS-DOS. La procedura che si usa dipende dalla dimensione dei 
+propri dischi di MS-DOS 6 o 6.2. I comandi in queste procedure danno per 
+scontato che i dischi di setup siano nell'unitÖ A e che i file di MS-DOS si 
+trovino nella directory C:\DOS; se i dischi o i file di MS-DOS sono in 
+un'unitÖ o una directory diversa, modificare i comandi di conseguenza.
+
+Se si usano i dischi di MS-DOS 6.2 da 1,2 Mb o da 1,44 Mb, oppure i 
+dischi di MS-DOS 6 da 1,2 Mb:
+
+ 1. Inserire il disco 1 Installazione nell'unitÖ A
+
+ 2. Digitare i seguenti comandi:
+
+    OPY A:*.OVL C:\DOS
+    EXPAND A:MSBACKUP.EXE C:\DOS
+    EXPAND A:MSBACKUP.HLP C:\DOS
+    EXPAND A:MSBCONFG.HLP C:\DOS
+
+Se si usano i dischi di MS-DOS 6 da 1,44 Mb:
+
+ 1. Inserire il disco 2 Installazione nell'unitÖ A
+
+ 2. Digitare i seguenti comandi:
+
+   EXPAND A:MSBACKUP.EXE C:\DOS
+   COPY A:*.OVL C:\DOS
+
+ 3. Inserire il disco 3 Installazione nell'unitÖ A
+
+ 4. Digitare i seguenti comandi:
+
+    COPY A:*.OVL C:\DOS
+    EXPAND A:MSBACKUP.HLP C:\DOS
+    EXPAND A:MSBCONFG.HLP C:\DOS
+
+    Questi comandi copiano i file di Backup dall'unitÖ A alla directory 
+    C:\DOS. Se il disco 1 Installazione si trova nell'unitÖ B o se i file 
+    di MS-DOS sono in una directory diversa, modificare i comandi di 
+    conseguenza.
+    
+5.6 Microsoft Defrag
+--------------------
+Se Microsoft Defrag visualizza il messaggio "Memoria insufficiente", 
+utilizzare il comando MEM per stabilire la quantitÖ di memoria convenzionale,
+superiore ed estesa (XMS) disponibile. Oltre ad utilizzare tutta la memoria
+convenzionale a disposizione, Defrag puï usare fino a 384 KB di memoria 
+estesa e 12 KB di memoria superiore.
+
+Per aumentare la quantitÖ di memoria disponibile, eseguire la procedura 
+descritta nella sezione "Un programma MS-DOS visualizza un messaggio 
+sull'esaurimento di memoria" nel capitolo "Individuazione e risoluzione 
+dei problemi" nel Manuale dell'utente di Microsoft MS-DOS.
+
+Se sono disponibili meno di 384 KB di memoria estesa, eseguire la procedura 
+descritta nella sezione "Come rendere disponibile pió memoria estesa" nel 
+capitolo "Come rendere disponibile una maggiore quantitÖ di memoria" nel 
+Manuale dell'utente do Microsoft MS-DOS.
+
+
+6. PROGRAMMI NON MICROSOFT
+===========================
+
+6.1 4DOS e NDOS
+-----------------
+4DOS e NDOS sono compatibili con MS-DOS 6. Tuttavia, per utilizzare 
+alcune delle nuove caratteristiche di MS-DOS 6.22 (quali MemMaker, 
+l'opzione LOADHIGH /L, le opzioni di compressione DIR e la capacitÖ di 
+ignorare i comandi di avvio), richiedere alla JP Software  4DOS 4.02 o 
+successiva oppure alla Symantec Norton Utilities versione 7.0 o successiva.
+
+Se si utilizzano configurazioni multiple, 4DOS o NDOS non eseguiranno 
+automaticamente il file AUTOEXEC.BAT a meno che non si includa un parametro 
+/P nella riga SHELL del file CONFIG.SYS.
+
+Per utilizzare la Guida di MS-DOS 6.22 invece della Guida di 4DOS o di NDOS, 
+avviarla con il comando COMMAND /C HELP oppure definire un alias 4DOS o NDOS 
+per eseguire HELP.COM dalla propria directory di MS-DOS 6.22.
+
+6.2 Programmi di installazione Above Board 286 e Above Board Plus
+------------------------------------------------------------------
+Non utilizzare un programma di installazione Above Board datato Maggio 1989
+o con data precedente se prima non si disattivano i programmi che utilizzano 
+memoria estesa, quali SMARTDrive o RAMDrive. Ne potrebbe conseguire una 
+perdita dei dati. Dopo aver installato Above Board, sarÖ possibile riattivare 
+questi programmi.
+
+6.3 CodeView
+------------
+ATTENZIONE  L'utilizzo del file CodeView CV.EXE versione dalla 3.0 alla 3.13
+potrebbe causare una perdita di dati qualora il sistema disponga di un 
+gestore di memoria 80386 (quale EMM386.EXE) e driver di periferica o 
+programmi che utilizzano la memoria estesa. Per stabilire la versione di cui 
+si dispone, digitare CV.EXE al prompt dei comaädi.
+
+6.4 Colorado Tape Backup
+------------------------
+Se viene visualizzato un messaggio per notificare che sono installate due 
+versioni del file VFINTD.386, ä probabile che si debba modificare il file 
+SYSTEM.INI file. Attenersi, in tal caso, alla seguente procedura:
+
+1. Aprire il file SYSTEM.INI ed individuare la sezione [386Enh].
+   Dovrebbe contenere due righe simili alle seguenti:
+
+   DEVICE=C:\TAPE\CMSDTAPE.386
+   DEVICE=C:\DOS\VFINTD.386
+
+2. Se si intende utilizzare il programma Colorado Tape Backup, aggiungere un 
+   punto e virgola (;) prima del comando DEVICE per il file VFINTD.386. Se 
+   invece si intende utilizzare Microsoft Backup, aggiungere un punto e 
+   virgola prima del comando DEVICE per il file CMSDTAPE.386.
+
+3. Salvare il file e riavviare Windows.
+
+6.5 Fastback Plus
+-----------------
+Se si dispone di una versione di Fifth Generation Systems Fastback Pluse 
+precedente la 3.0, utilizzare il comando LOADFIX prima di eseguire Fastback 
+Plus oppure il programma di installazione corrispondente per assicurarsi che 
+i dati non andranno persi. Digitare quanto segue al prompt dei comandi:
+
+LOADFIX FB.EXE
+
+oppure
+
+LOADFIX FBINSTAL.EXE
+
+6.6 Norton Desktop per Windows 2.0
+----------------------------------
+Il programma di installazione aggiunge un secondo menu Strumenti che 
+contiene i comandi Microsoft Backup e Anti-Virus (se i programmi Windows 
+corrispondenti sono stati installati), cosç come il comando Inform. di 
+compressione (se DoubleSpace o DriveSpace ä installato).
+
+Se si comprime l'unitÖ che contiene SmartCan, si potrebbero verificare dei 
+problemi di sistema in seguito. Per correggere ciï, reinstallare Norton 
+Desktop per Windows.
+
+Per informazioni su come usare Norton AntiVirus con DoubleSpace o DriveSpace, 
+vedere la sezione seguente.
+
+6.7 Norton Utilities
+--------------------
+Speed Disk e Disk Doctor di Norton versione 8.0 e precedenti non possono 
+essere usate sulle unitÖ DriveSpace. Per una versione aggiornata di queste 
+utilitÖ, contattare il proprio rivenditore di software.
+
+L'opzione "Clear Space" di Norton Speed Disk (versione precedente alla 7.0)
+non ä compatibile con le unitÖ DoubleSpace e DriveSpace. Richiedere al 
+proprio rivenditore una versione aggiornata di Norton Speed Disk.
+
+Non utilizzare l'utilitÖ WipeInfo (versione precedente alla 8.0) sulle unitÖ 
+compresse. Alcuni cluster potrebbero andare persi. Se questa opzione ä giÖ 
+stata utilizzata, utilizzare il comando SCANDISK per ripristinare i cluster 
+persi.
+
+Se ä in esecuzione Norton AntiVirus quando si comprime l'unitÖ contenente 
+il file NAV_.SYS, una copia del file NAV_.SYS rimane sull'unitÖ 
+host. Ciï impedisce al Norton AntiVirus di riscontrare la presenza di virus 
+durante il processo di compressione. Dopo aver completato il processo di 
+compressione, si puï eliminare la copia del file NAV_.SYS sull'unitÖ host.
+
+Se si utilizzano le utilitÖ Norton Cache o Speedrive, caricare l'utilitÖ
+dopo il comando DEVICE che carica DRVSPACE.SYS. Per ulteriori informazioni,
+vedere la sezione 7.24.
+
+6.8 PC Tools
+------------
+Se PC Shell non mostra tutti i file o le directory sull'unitÖ, uscire subito 
+da PC Shell e contattare Central Point Software per un aggiornamento. 
+
+AVVERTENZA: Non tentare di utilizzare PC Shell sull'unitÖ; potrebbe 
+verificarsi una grave perdita di dati. Questo problema riguarda sia le 
+unitÖ compresse sia quelle non compresse. 
+
+
+L'opzione DISKFIX /SCAN di PC Tools puï causare la perdita di cluster
+delle unitÖ DriveSpace e DoubleSpace. Evitare di usare questa opzione. Se 
+questa opzione ä giÖ stata utilizzata, utilizzare il comando SCANDISK per 
+ripristinare i cluster perduti.
+
+Il comando COMPRESS di PC Tools versioni 6.0 e 5.5 non ä compatibile con 
+DoubleSpace e DriveSpace.
+
+6.9 Stealth DoubleSpace di QEMM
+-------------------------------
+Stealth DoubleSpace di QEMM 7.03 e 7.04 sono compatibili con MS-DOS 6.22.  
+Queste versioni sono disponibili a tutti gli utenti QEMM 7 attraverso 
+servizi in linea quali BIX, CompuServe, i BBS QuarterDeck e direttamente 
+dalla QuarterDeck Office Systems.
+
+Il driver DoubleSpace Stealth (ST-DBL.SYS) incluso nella versione 7.01 ä 
+incompatibile con MS-DOS 6.22 (sia DoubleSpace che DriveSpace). Se si usa 
+la versione 7.01 di QEMM e il sistema non si avvia, vedere la sezione 
+seguente.
+
+Se si utilizza Stealth DoubleSpace di QEMM versione 7.01  
+--------------------------------------------------------
+Stealth DoubleSpace di QEMM 7.01 non ä compatibile con MS-DOS 6.22. Se si usa 
+DuobleSpace e la caratteristica Stealth DoubleSpace di QEMM 7.01, il computer 
+non verrÖ avviato in modo adeguato. 
+
+Per risolvere il problema, premere F8 all'avvio del computer.
+Rispondere S a tutte le richieste tranne la seguente:
+
+    DEVICE=C:\QEMM\ST-DBL.SYS [S/N]?
+
+A tale richiesta, rispondere N. (Il nome del percorso per ST-DBL.SYS puï 
+essere diverso sul proprio computer). Dopo l'avvio del computer, modificare 
+il file CONFIG.SYS ed apportare le seguenti modifiche:
+
+ * Disattivare il comando DEVICE per ST-DBL.SYS usando il comando REM.
+ 
+ * Se si Usa DoubleSpace, aggiungere un comando DEVICE per DBLSPACE.SYS. Ad esempio:
+
+    DEVICE=C:\DOS\DBLSPACE.SYS /MOVE
+
+    (Se si usa DriveSpace, aggiungere un comando DEVICE per DRVSPACE).
+
+6.10  Johnson Computer Systems PC-Vault e PC-Vault Plus
+-------------------------------------------------------
+Se si utilizza la versione 4.6 o precedente del sistema di protezione del
+disco rigido PC-Vault o PC-Vault Plus, non utilizzare l'opzione Maximum 
+Floppy Boot Protection se si utilizza DoubleSpace o DriveSpace.
+
+In queste versioni di PC-Vault e PC-Vault plus, l'opzione Maximum Floppy
+Boot Protection non ä compatibile con DoubleSpace e DriveSpace e puï causare 
+la perdita di dati. Se la versione di PC-Vault o PC-Vault Plus ä anteriore 
+alla 4.6, contattare Johnson Computer Systems per un aggiornamento.
+
+6.11  AddStor Double Tools 
+--------------------------
+AddStor's Double Tools versione 1.0 e 1.2 funzionano solo con DoubleSpace, 
+non con DriveSpace.
+
+AddStor's Double Tools versione 1.0 funziona con DoubleSpace di MS-DOS 6.22 
+se non si installano i driver DoubleSpace avanzati di AddStor.
+Se si installa Double Tools versione 1.0, non contrassegnare la casella 
+"Installare i driver DriveSpace versione avanzata". Altrimenti Double Tools 
+sostituirÖ il file DBLSPACE.BIN di MS-DOS 6.22 con la versione Double Tools 
+di DBLSPACE.BIN, che ä compatibile unicamente con MS-DOS 6.0. Quando si avvia 
+il computer la volta successiva, visualizzerÖ il messaggio "Versione di 
+DBLSPACE.BIN non valida" e non verrÖ installata alcuna delle unitÖ compresse.
+
+Se si usa Double Tool versione 1.0 o 1.2 con il driver DoubleSpace avanzato 
+installato, non sarÖ possibile eseguire l'installazione di MS-DOS 6.22. Per 
+risolvere questo problema, eseguire il programma DTCONFIG.EXE di Double Tools 
+e scegliere l'opzione "Microsoft" (nella versione 1.0) o "Standard" (nella 
+versione 1.2). Salvare le modifiche, chiudere DTCONFIG e eseguire nuovamente 
+l'installazione di MS-DOS 6.22.
+
+
+7. DriveSpace
+==============
+MS-DOS 6.22 include il programma di compressione DriveSpace. DriveSpace ä 
+simile a DoubleSpace, che era incluso nelle versioni 6 e 6.2. La principale 
+differenza ä che DriveSpace memorizza i dati compressi in un formato diverso 
+da DoubleSpace.
+
+Nota: Se si esegue l'aggiornamento da MS-DOS 6 o 6.2, ä sempre possibile 
+usare DoubleSpace con MS-DOS 6.22. Se l'aggiornamento ä stato fatto da 
+MS-DOS 5, DoubleSpace non ä presente nel sistema.
+
+7.1  Conversione delle unitÖ DoubleSpace a DriveSpace
+-----------------------------------------------------
+Se si usa attualmente DoubleSpace, ä sempre possibile continuare ad usarlo 
+anche con MS-DOS 6.22. Oppure si puï convertire il sistema e tutte le unitÖ 
+compresse da DoubleSpace in formato DriveSpace.
+
+NOTA Il processo di decompressione puï durare a lungo, specialmente se le 
+     unitÖ DoubleSpace contengono molti dati, nel qual caso ä consigliabile 
+     eseguirlo durante la notte.
+
+Per convertire il sistema da DoubleSpace a DriveSpace:
+
+1. Se non si ä giÖ provveduto, eseguire un backup di ogni unitÖ DoubleSpace.
+
+2. Eseguire DoubleSpace e scegliere il comando Decomprimi dal menu Strumenti. 
+   Quando DoubleSpace chiederÖ di disinstallare DoubleSpace, digitare S.
+
+   DoubleSpace decomprime tutte le unitÖ DoubleSpace installate ed elimina 
+   DBLSPACE.BIN (la parte di MS-DOS che fornisce l'accesso alle unitÖ 
+   DoubleSpace) dalla memoria.
+
+3. Installare DriveSpace digitando DRVSPACE al prompt dei comandi.
+
+
+7.2  Conversione del programma di compressione XtraDrive in DriveSpace
+------------------------------------------------------------------------
+Se il computer utilizza il programma di compressione XtraDrive, utilizzare 
+il corrispondente programma di disinstallazione ed installare quindi 
+DriveSpace.
+
+7.3  Conversione di Stacker 3.1 in DriveSpace
+----------------------------------------------
+Se si dispone di un'unitÖ compressa con Stacker versione 3.1, attenersi alla 
+seguente procedura per rimuovere Stacker 3.1 ed installare DriveSpace. (Se 
+si utilizza Stacker 2.x o 3.0, eseguire la procedura descritta nella sezione 
+7.4).
+
+1. Utilizzare il comando di Stacker UNSTACK per decomprimere tutte le unitÖ 
+   Stacker.(Se si dispone di dischi floppy compressi con Stacker, 
+   decomprimerli ora oppure assicurarsi che siano stati configurati con la 
+   caratteristica StackerAnywhere di Stacker).
+
+2. Cambiare la directory principale dell'unitÖ del disco rigido d'avvio,
+   quindi digitare i seguenti comandi:
+
+   ATTRIB -R-H-S STACKER.INI
+   ATTRIB -R-H-S DRVSPACE.BIN
+   DEL STACKER.INI
+   DEL DRVSPACE.BIN
+   
+3. Riavviare il computer.
+
+4. Eseguire il programma di installazione di DriveSpace digitando DRVSPACE 
+   al prompt dei comandi.
+
+7.4  Conversione di altri programmi di compressione in DriveSpace
+------------------------------------------------------------------
+Se non si utilizza il programma di compressione Stacker versione 3.1 o 
+XtraDrive attenersi alla seguente procedura per convertire il programma 
+utilizzato in DriveSpace.
+
+1. Installare MS-DOS 6.22.
+
+2. Utilizzare Microsoft Backup per MS-DOS per effettuare il backup dei file 
+   sul disco rigido. Se Backup per MS-DOS non ä stato installato durante 
+   l'installazione, consultare il capitolo "Guida introduttiva" del Manuale 
+   dell'utente di Microsoft MS-DOS per le istruzioni sull'installazione.
+
+3. Se i propri dischi di installazione sono compatibili con l'unitÖ A, 
+   inserire il disco "Disco 1 - Installazione" nell'unitÖ A e riavviare il 
+   computer. Quando viene visualizzata la prima schermata del programma di 
+   installazione, uscire dal programma premendo F3 due volte.
+
+   Se i propri dischi di installazione non sono compatibili con l'unitÖ A,
+   creare un disco floppy di avvio per l'unitÖ A. Per creare il disco, 
+   inserire il disco "Disco 1 - Installazione" nell'unitÖ B ed un floppy 
+   vuoto nell'unitÖ A. Digitare quindi B:SETUP /F al prompt dei comandi.
+  
+   Quando richiesto, scegliere di installare MS-DOS sul disco floppy
+   nell'unitÖ A. Terminata l'installazione, lasciare il disco nell'unitÖ A
+   e riavviare il computer.
+
+4. Utilizzare il comando FORMAT per formattare l'unitÖ che contiene
+   il file contenente tutti i file compressi. Se non si conosce la posizone 
+   del file, consultare la documentazione del proprio programma di 
+   compressione.
+
+   Se si sta riformattando l'unitÖ C, includere l'opzione /S per trasferirvi
+   i file di sistema.
+
+5. Se si ä giÖ formattata l'unitÖ C, assicurarsi che il disco "Disco 1 - 
+   Installazione" si trovi nell'unitÖ A o B e digitare A:SETUP o B:SETUP al 
+   prompt dei comandi.
+
+   Seguire le istruzioni visualizzate.
+
+6. Al termine dell'installazione, installare DriveSpace digitando DRVSPACE
+   al prompt dei comandi. Seguire le istruzioni visualizzate.
+
+7. Utilizzare Backup per MS-DOS per ripristinare i file di cui ä stato fatto 
+   il backup.
+
+   NOTA  Quando si eseguirÖ Microsoft Backup, sarÖ necessario riconfigurarlo.
+   Inoltre, sarÖ necessario recuperare il file catalogo dai propri dischi 
+   floppy di backup scegliendo il pulsante Catalogo nella finestra di dialogo 
+   Ripristina.
+
+7.5 Il programma di installazione di DriveSpace indica che il computer 
+    sta eseguendo un programma di caching non compatibile.
+------------------------------------------------------------------------
+Se il programma di installazione di DriveSpace visualizza un messaggio per 
+notificare che il computer sta eseguendo un programma di caching, aprire il 
+file CONFIG.SYS oppure AUTOEXEC.BAT ed eliminare il comando che carica tale 
+comando. Se si desidera utilizzare un programma di caching, aggiungere una 
+riga per il programma SMARTDRV di MS-DOS 6.22 nel file AUTOEXEC.BAT. 
+Ad esempio, se i file di MS-DOS si trovano in una directory denominata DOS,
+aggiungere la riga che segue:
+
+C:\DOS\SMARTDRV.EXE
+
+Uscire dall'editor di testo e riavviare il computer. Eseguire di nuovo 
+DriveSpace.
+
+7.6 L'unitÖ compressa ha esaurito lo spazio su disco
+----------------------------------------------------
+Se l'unitÖ compressa ha esaurito lo spazio su disco, ä possibile correggere 
+il problema con uno dei seguenti metodi:
+
+o Aumentare le dimensioni dell'unitÖ.
+
+o Eseguire i comandi DRVSPACE /DEFRAG /F e DRVSPACE /DEFRAG sull'unitÖ.
+
+Nella rimanente parte di questa sezione verrÖ illustrato ciascun metodo.
+
+Aumento delle dimensioni di un'unitÖ compressa
+----------------------------------------------
+E' possibile aumentare le dimensioni di un'unitÖ compressa per rendere 
+disponibile una maggiore quantitÖ di spazio sull'unitÖ non compressa
+(l'unitÖ host). 
+
+Per aumentare le dimensioni di un'unitÖ compressa:
+
+1. Avviare il programma DriveSpace digitando DRVSPACE al prompt dei 
+   comandi.
+
+2. Selezionare l'unitÖ compressa che si desidera ingrandire, quindi 
+   scegliere il comando Cambia dimensioni dal menu UnitÖ.
+
+   DriveSpace visualizzerÖ la finestra di dialogo Cambia dimensioni. La 
+   riga Nuovo spazio disponibile visualizza la quantitÖ di spazio libero di 
+   cui disporranno l'unitÖ compressa e non compressa se si sceglie OK. 
+
+3. Specificare un numero minore per la riga Nuovo spazio disponibile 
+   dell'unitÖ non compressa. Si noti che mentre si modifica questo numero, 
+   DriveSpace regolerÖ la quantitÖ di Nuovo spazio disponibile per l'unitÖ 
+   compressa. Quando la quantitÖ di Nuovo spazio disponibile sarÖ quella
+   desiderata, scegliere OK.
+
+   DriveSpace aumenterÖ le dimensioni dell'unitÖ
+
+Esecuzione dei comandi DRVSPACE /DEFRAG /F e DRVSPACE /DEFRAG sull'unitÖ 
+compressa.
+-------------------------------------------------------------------------
+E' possibile a volte liberare una maggiore quantitÖ di spazio su un'unitÖ
+compressa eseguendo il comando DEFRAG.
+
+NOTA  E'consigliabile eseguire la procedura che segue di notte in quanto
+potrebbe richiedere molto tempo. Per eseguire l'intera procedura sarÖ 
+necessario creare un file batch che contiene entrambi i comandi della 
+procedura.
+
+Per liberare spazio utilizzando la doppia compattazione dell'unitÖ:
+
+1. Passare all'unitÖ compressa.
+
+2. Digitare DEFRAG unitÖ: /F al prompt dei comandi
+
+   Dove unitÖ: indica l'unitÖ compressa. Ad esempio, DEFRAG C: /F.
+   DEFRAG compatterÖ completamente la tavola di allocazione file sull'unitÖ,
+   quindi avviare DRVSPACE /DEFRAG per consolidare lo spazio sul CVF.
+
+3. Quando DEFRAG avrÖ terminato la compattazione, digitare 
+   DRVSPACE /DEFRAG /F al prompt dei comandi.
+
+   DriveSpace riconsolida lo spazio libero sull'unitÖ e rende disponibile
+   la quantitÖ massima possibile.
+
+7.7 L'unitÖ non compressa ha esaurito lo spazio su disco
+--------------------------------------------------------
+Se l'unitÖ non compressa (unitÖ host) ha esaurito lo spazio su disco, sarÖ
+possibile aumentare le dimensioni di qualsiasi unitÖ non compressa 
+archiviata nell'unitÖ compressa. Questa procedura riduce naturalmente 
+la quantitÖ di spazio libero sulle unitÖ compresse.
+
+Per aumentare le dimensioni dell'unitÖ non compressa (unitÖ host):
+
+1. Avviare il programma DriveSpace digitando DRVSPACE al prompt dei comandi.
+
+2. Selezionare l'unitÖ compressa della quale si desidera ridurre le 
+   dimensioni, quindi scegliere il comando Cambia dimensione dal menu UnitÖ 
+   (E' necessario selezionare un'unitÖ compressa archiviata sull'unitÖ non
+   compressa che ha esaurito la memoria. Per trovare le unitÖ compresse
+   archiviate sull'unitÖ non compressa, digitare DRVSPACE /LIST al prompt
+   dei comandi).
+
+   DriveSpace visualizzerÖ la finestra di dialogo Cambia dimensioni. 
+   La riga Nuovo spazio disponibile visualizza la quantitÖ di spazio libero 
+   che le unitÖ compresse e non compresse avranno se si sceglie OK. 
+
+3. Specificare un numero pió grande per la riga Nuovo spazio disponibile
+   relativa all'unitÖ non compressa. Si noti che mentre viene modificato
+   questo numero, DriveSpace regola la quantitÖ di Nuovo spazio disponibile
+   per l'unitÖ compressa. Quando la riga Nuovo spazio disponibile di entrambi
+   le unitÖ visualizza i valori desiderati, scegliere OK.
+
+   DriveSpace riduce la dimensione dell'unitÖ compressa, rendendo cosç
+   disponibile una maggiore quantitÖ di spazio sulla corrispondente 
+   unitÖ non compressa. 
+
+7.8 DriveSpace non ha compresso tutti i file per mancanza di spazio su
+    disco
+------------------------------------------------------------------------
+Se DriveSpace indica che non ä in grado di comprimere alcuni file perchä 
+non c'ä sufficiente spazio su disco, attenersi alla seguente procedura.
+
+1. Digitare DRVSPACE /LIST al prompt dei comandi per un elenco delle unitÖ 
+   non compresse.
+
+2. Utilizzare Microsoft Backup per salvare su dischi floppy i file non
+   compressi che si trovavano sull'unitÖ non compressa.
+
+3. Eliminare i file non compressi che si trovavano sull'unitÖ non compressa.
+
+4. Digitare DRVSPACE al prompt dei comandi.
+
+5. Scegliere il comando Cambia dimensione dal menu UnitÖ.
+
+6. Per aumentare la dimensione dell'unitÖ compressa, diminuire 
+   la dimensione dell'unitÖ non compressa. Scegliere OK.
+
+7. Scegliere il comando Esci dal menu UnitÖ, quindi copiare i file di 
+   backup nell'unitÖ compressa. Se la memoria viene nuovamente esaurita, 
+   ripetere i passaggi da 5 a 7 fino a quando l'unitÖ compressa non 
+   sarÖ grande abbastanza.
+
+7.9 Windows visualizza il messaggio "Il file di scambio permanente ä
+    danneggiato".
+---------------------------------------------------------------------
+Se si utilizza un file di scambio permanente di Windows, ä necessario 
+includerlo su un'unitÖ non compressa. Se il file di scambio permanente di 
+Windows si trova su un'unitÖ compressa, Windows visualizzerÖ all'avvio il 
+messaggio "File di scambio permanente danneggiato". 
+
+Quando viene installato, DriveSpace verifica se esiste un file di scambio 
+permanente di Windows. Se trova il file, lo sposta sull'unitÖ non compressa.
+Se si installa Windows dopo aver installato DriveSpace oppure se si 
+utilizza il Pannello di controllo per cambiare la posizione del file di 
+scambio permanente, il file non si troverÖ pió su un'unitÖ compressa. 
+(Quando viene specificata un'unitÖ per il file di scambio permanente, 
+Windows consente di scegliere solo un'unitÖ compressa).
+
+Per spostare il file di scambio permanente su un'unitÖ non compressa:
+
+1. Avviare Windows.
+
+2. Nella schermata "Il file di scambio permanente ä danneggiato", scegliere 
+   S dopo il messaggio "Eliminare questo file di scambio?", quindi premere 
+   INVIO. 
+
+3. Aprire il Pannello di controllo e fare doppio clic sull'icona 386 Avanzata.
+
+4. Scegliere il pulsante Memoria virtuale.
+   Windows visualizzerÖ una finestra di dialogo nella quale verrÖ 
+   indicato che ä stato trovato un file di scambio permanente danneggiato 
+   e verrÖ richiesto se si desidera impostare a 0 la lunghezza del file.
+
+5. Scegliere Sç. Windows visualizzerÖ un'altra finestra di dialogo Memoria
+   virtuale.
+
+6. Scegliere il pulsante Cambia. Windows visualizzerÖ le impostazioni
+   del file di scambio.
+
+7. Nella casella di riepilogo "UnitÖ", selezionare un'unitÖ non compressa.
+   Nella casella di riepilogo "Tipo", selezionare "Permanente".
+
+   Se l'unitÖ non compressa non ha abbastanza spazio libero per creare 
+   il file di scambio permanente, creare un file di scambio temporaneo 
+   sulle unitÖ non compresse o sulle unitÖ compresse. (Per informazioni 
+   su come rendere disponibile dello spazio sull'unitÖ non compressa, 
+   consultare la sezione 7.7).
+
+   Dopo aver specificato le impostazioni per il file di scambio, 
+   scegliere due volte OK e seguire le istruzioni visualizzate.
+
+7.10  Se EXTDISK.SYS visualizza un messaggio di errore relativo 
+      alle lettere di unitÖ
+-----------------------------------------------------------------
+Se si utilizza DriveSpace su un PC Compaq e il file CONFIG.SYS carica il
+driver di periferica EXTDISK.SYS, questo driver visualizzerÖ il seguente
+messaggio durante il caricamento:
+
+AVVERTENZA EXTDISK.SYS non ä il primo driver di periferica ad assegnare 
+		       lettere di unitÖ. Le lettere delle unitÖ disco rigido 
+		       fisiche non saranno contigue.
+
+Il driver EXTDISK.SYS continua a funzionare in maniera corretta. Visualizza 
+questo messaggio perchÇ si aspetta di essere il primo modulo ad assegnare le 
+lettere di unitÖ. Dato che DRVSPACE.BIN viene caricato prima di CONFIG.SYS 
+e assegna alcune lettere di unitÖ, EXTDISK.SYS non sarÖ pió il primo. 
+(EXTDISK.SYS visualizza il messaggio senza tener conto del momento in cui 
+il driver di periferica DRVSPACE.SYS viene caricato nel file CONFIG.SYS).
+
+7.11 L'utilizzo dell'unitÖ di avvio compressa richiede un 
+     driver di periferica speciale
+----------------------------------------------------------
+Se l'unitÖ disco rigido di avvio richiede un driver di periferica nel file
+CONFIG.SYS, si consiglia di non comprimerla. In caso contrario il computer
+potrebbe non avviarsi correttamente perchÇ DriveSpace non sarÖ in grado di 
+fornire l'accesso all'unitÖ di avvio. (Ciï dipende dal fatto che MS-DOS 
+carica DRVSPACE.BIN, vale a dire la parte di MS-DOS che fornisce l'accesso 
+alle unitÖ compresse, prima di eseguire i comandi del file CONFIG.SYS).
+
+Per installare DriveSpace su un PC con un disco di avvio che necessita di
+un driver di periferica speciale, utilizzare il programma di installazione di
+DriveSpace per comprimere un disco diverso da quello di avvio. In alternativa
+utilizzare il programma di installazione di DriveSpace per creare una nuova
+unitÖ compressa.
+
+7.12 Compattazione delle unitÖ non compresse dopo aver modificato gli 
+     attributi dei file
+---------------------------------------------------------------------
+E' possibile compattare con sicurezza sia le unitÖ compresse che le unitÖ 
+non compresse, utilizzando MS-DOS Defrag o un altro programma di 
+compattazione fino a quando non verranno modificati gli attributi dei 
+volumi compressi. 
+
+ATTENZIONE Se si modificano gli attributi di un volume compresso, e 
+	   successivamente si compatta l'unitÖ non compressa senza 
+	   disinstallare le unitÖ compresse, si potrebbero perdere i dati.
+
+Se si desidera compattare completamente l'unitÖ non compressa, ä necessario
+innanzitutto disinstallare tutte le unitÖ compresse incluse nell'unitÖ non 
+compressa, rimuovere tutti gli attributi quindi utilizzare DEFRAG o un altro 
+programma di compattazione.
+
+7.13 File che DriveSpace non puï comprimere
+--------------------------------------------
+Alcuni file (quali i file ZIP) sono giÖ compressi. DriveSpace non puï 
+comprimere questi file ulteriormente.
+
+I file di dati cifrati, quali i file MMF di Microsoft Mail 3.0, non sono 
+comprimibili e verranno memorizzati in formato non compresso, anche 
+se sono inclusi in unitÖ compresse.
+
+Per migliorare la velocitÖ del sistema, ä preferibile archiviare i file non 
+compattabili su un'unitÖ non compressa piuttosto che su un'unitÖ compressa.
+
+7.14 Defrag ha esaurito la memoria durante la compressione di 
+     un'unitÖ
+--------------------------------------------------------------
+Se Defrag ha esaurito la memoria durante la compressione di un'unitÖ,
+occorre uscire da DriveSpace, quindi attenersi alle procedure descritte
+nella sezione 5.4 di questo file.
+
+Se Defrag non dispone di memoria sufficiente anche dopo aver eseguito tali 
+procedure, significa che i file sul disco rigido da riorganizzare sono troppi 
+per Defrag. Per correggere questo problema sarebbe opportuno eliminare alcuni 
+file o spostarli su un disco floppy o su un'unitÖ di rete.
+
+7.15 DriveSpace e PC-Vault
+---------------------------
+Vedi sezione 6.10.
+  
+7.16 Dimensione massima di un'unitÖ compressa
+---------------------------------------------
+La dimensione massima di un'unitÖ compressa da DriveSpace ä di 512 MB. 
+Ad esempio, se si possiede un'unitÖ disco da 600 MB, questa non potrÖ
+essere maggiore di 512 MB una volta compressa. Per comprimere il resto
+dell'unitÖ disco, eseguire DriveSpace e scegliere Crea nuova unitÖ
+dal menu Comprimi. Assegnare alla nuova unitÖ compressa le dimensioni 
+massime. (Se l'unitÖ ä molto grande, sarÖ necessario creare molte nuove
+unitÖ compresse per comprimere l'intera unitÖ).
+
+7.17  DriveSpace non ä in grado di installare un'unitÖ
+-------------------------------------------------------
+Se all'avvio del computer viene visualizzato il messaggio "DriveSpace non 
+ä in grado di installare l'unitÖ X", dove X indica la lettera di unitÖ, 
+significa che si sono verificati dei problemi che non consentono l'accesso 
+all'unitÖ. DriveSpace archivia ciascuna unitÖ compressa in un particolare 
+file chiamato CVF (Compressed Volume File). Questo file ha gli attributi di 
+file nascosto, di sistema e di sola lettura ed ä archiviato su un'unitÖ non 
+compressa.
+
+Per utilizzare di nuovo l'unitÖ compressa, ä necessario eseguire ScanDisk sul
+volume compresso, quindi riavviare il sistema. Il messaggio di errore include
+il nome del volume compresso sul quale eseguire ScanDisk (ad esempio, 
+C:\DRVSPACE.000).
+
+Per correggere il problema su un'unitÖ compressa diversa da C:
+
+  o  Digitare il comando di SCANDISK specificato dal messaggio di errore di 
+     DriveSpace. Ad esempio, SCANDISK D:\DRVSPACE.001. (Se MS-DOS non ä in 
+     grado di trovare SCANDISK, consultare la procedura successiva).
+
+Per correggere il problema per l'unitÖ compressa C o se MS-DOS non ä in grado 
+di trovare SCANDISK:
+
+1. Inserire il disco "Disco 1 - Installazione" nell'unitÖ A (o B) del 
+   computer.
+
+2. Passare all'unitÖ che contiene il disco di installazione.
+
+3. Per avviare ScanDisk, digitare SCANDISK come specificato dal messaggio
+   di errore di DriveSpace. Ad esempio, SCANDISK C:\DRVSPACE.000.
+   Quando ScanDisk visualizza la finestra di dialogo che descrive il 
+   problema, scegliere il pulsante Correggi.
+
+4. Dopo che ScanDisk avrÖ terminato le operazioni, rimuovere il disco floppy 
+   e riavviare il computer.
+
+7.18  DriveSpace termina l'installazione ma non riesce ad accedere 
+      all'Hardcard
+--------------------------------------------------------------------
+Vedere la sezione 4.2, parte C.
+
+7.19  Viene visualizzato un messaggio di DoubleGuard Alarm
+----------------------------------------------------------
+Se viene visualizzato un messaggio di DoubleGuard Alarm, significa che 
+DoubleGuard ha rilevato che un'applicazione ha danneggiato la memoria che 
+veniva utilizzata da DriveSpace. DoubleGuard arresta il computer per 
+impedire ulteriori danni ai dati.
+
+In genere, ciascun programma dispone di un'area distinta di memoria e non 
+utilizza la memoria riservata per un altro programma. Tuttavia, alcuni 
+programmi contengono degli errori di programmazione che li portano ad 
+utilizzare inavvertitamente la memoria assegnata ad altri programmi. 
+Se per errore viene utilizzata della memoria assegnata a DriveSpace, puï 
+accadere che i dati del programma sovrascrivano i dati che DriveSpace stava 
+memorizzando. Dal momento che i dati memorizzati da DriveSpace includono in 
+genere i file correntemente in uso dall'utente, ne puï conseguire un danno ai 
+propri dati.
+
+La caratteristica di protezione di DriveSpace, DoubleGuard, rileva quando 
+un altro programma ha violato la memoria di DriveSpace e spegne 
+immediatamente il computer per ridurre il rischio di perdita di dati. 
+(Se si verificasse un'ulteriore attivitÖ del disco, si potrebbero perdere 
+alcuni o tutti i dati dell'unitÖ, visto che i dati memorizzati da DriveSpace 
+non sono probabilmente validi perchÇ danneggiati da un altro programma).           .
+
+Se viene visualizzato un messaggio di DoubleGuard Alarm, attenersi alla 
+seguente procedura:
+
+1. Riavviare il computer spegnendolo e riaccendendolo.
+
+2. Digitare quanto segue al prompt dei comandi:
+
+     SCANDISK /ALL
+
+   Questo comando esegue ScanDisk su tutte le unitÖ per rilevare e 
+   correggere qualsiasi problema causato dal programma che ha violato la 
+   memoria di DriveSpace.
+
+3. Annotare il nome del programma, se esiste, che era in esecuzione quando ä 
+   stato visualizzato il messaggio di DoubleGuard Alarm. Quel programma ha 
+   probabilmente (ma non necessariamente) causato la visualizzazione del 
+   messaggio. Se vengono visualizzati ulteriori messaggi di DoubleGuard 
+   Alarms, annotare l'operazione che si stava eseguendo e vedere se si 
+   riesce a risalire alla causa.
+
+7.20  Un'unitÖ compressa ä correntemente troppo frammentata per 
+      l'installazione
+----------------------------------------------------------------
+Se viene visualizzato il messaggio "L'unitÖ X compressa ä correntemente 
+troppo frammentata per l'installazione" (dove X ä la lettera di unitÖ) 
+all'avvio del computer oppure se DriveSpace visualizza il messaggio "Il 
+file X:\DRVSPACE.nnn ä troppo frammentato per l'installazione", DriveSpace
+non sarÖ in grado di installare l'unitÖ in quanto il volume compresso 
+corrispondente ä memorizzato in troppi frammenti sul disco rigido. 
+(DriveSpace memorizza ogni unitÖ compressa in un file speciale chiamato CVF 
+(compressed volume file). Il CVF ä un file attributi nascosto, di sistema e 
+sola lettura ed ä memorizzato in un'unitÖ decompressa.
+
+Per correggere questo problema, aumentare l'impostazione di MaxFileFragments 
+nel file DRVSPACE.INI. DriveSpace visualizza il messaggio di errore "troppo 
+frammentata per l'installazione" in quanto il numero di frammenti del file 
+CVF supera tale impostazione. Seguire questa procedura:
+
+1. Cambiare la directory principale dell'unitÖ di avvio. (Se l'unitÖ di avvio 
+   ä compressa, passare all'unitÖ principale di quell'unitÖ).
+
+2. Digitare il seguente comando:
+
+     TYPE DRVSPACE.INI
+
+3. Controllare il valore corrente dell'impostazione MaxFileFragments.
+
+4. Utilizzare il comando DRVSPACE /MAXFILEFRAGMENTS per specificare un valore 
+   maggiore. Ad esempio, se MaxFileFragments ä correntemente impostato a 128, 
+   occorrerÖ digitare il seguente comando:
+
+     DRVSPACE /MAXFILEFRAGMENTS=200
+
+5. Riavviare il computer. DriveSpace dovrebbe ora essere in grado di 
+   installare l'unitÖ.
+
+Se DriveSpace non ä ancora in grado di installare l'unitÖ, attenersi alla 
+seguente procedura:
+
+1. Eseguire ScanDisk per controlllare l'affidabilitÖ del disco rigido 
+   digitando il seguente comando al prompt dei comandi:
+
+      SCANDISK /ALL /SURFACE
+
+2. Riavviare il computer. Se DriveSpace non ä ancora in grado di installare 
+   l'unitÖ, procedere al passaggio 3.
+
+3. Rimuovere gli attributi Sola lettura, Sistema e Nascosto nel file
+   DRVSPACE.<XXX>. Ad esempio, se il file ä H:\DRVSPACE.000,
+   digitare il seguente comando al prompt dei comandi:
+
+       ATTRIB H:\DRVSPACE.000 -R -S -H
+
+4. Eseguire Microsoft Defrag digitando DEFRAG al prompt dei comandi.
+
+5. Utilizzare il comando ATTRIB per reimpostare gli attributi dei file su 
+   DRVSPACE.<XXX>. Ad esempio, se il file ä H:\DRVSPACE.000, digitare quanto 
+   segue al prompt dei comandi:
+
+       ATTRIB H:\DRVSPACE.000 +R +S +H
+
+6. Riavviare il computer. DriveSpace dovrebbe ora essere in grado di 
+   installare l'unitÖ compressa.
+
+7.21  Appare il messaggio "Il computer sta eseguendo una 
+      versione non compatibile di DBLSPACE.BIN" 
+------------------------------------------------------------------------
+Se si tenta di eseguire la versione MS-DOS 6 di DBLSPACE.EXE con MS-DOS 6.22,
+verrÖ visualizzato il seguente messaggio:
+
+  Il computer sta eseguendo con una versione non compatibile di DBLSPACE.BIN.
+  Aggiornare DBLSPACE.BIN nella directory principale dell'unitÖ @.
+
+DBLSPACE.EXE ha rilevato che il suo numero di versione non corrisponde con 
+quello di DBLSPACE.BIN di MS-DOS 6.22. Per correggere il problema, ä 
+necessario aggiornare questa copia del file DBLSPACE.EXE.
+
+Quando si esegue il programma di installazione di MS-DOS 6.22, viene 
+aggiornato il file DBLSPACE.EXE nella directory che contiene i file 
+MS-DOS. Se sul disco sono presenti altre copie di DBLSPACE.EXE, ad esempio 
+nella directory principale dell'unitÖ principale, queste non verranno 
+aggiornate durante l'installazione. Per aggiornarle manualmente, utilizzare 
+il comando COPY /Y per copiare la versione MS-DOS 6.22 di DBLSPACE.EXE sulle 
+versioni precedenti. (La versione MS-DOS 6.22 di DBLSPACE.EXE si trova nella 
+directory che contiene i file MS-DOS).
+
+
+7.22  Uso del comando DRVSPACE dopo aver evitato DRVSPACE.BIN
+-------------------------------------------------------------
+Se si evita DRVSPACE.BIN all'avvio del computer (premendo
+CTRL+F5 o CTRL+F8), il comando DRVSPACE potrebbe non funzionare
+come previsto:
+
+ * Di solito, se ä installato DriveSpace, digitando DRVSPACE viene
+   eseguito il programma DriveSpace. Comunque, se si digita DRVSPACE 
+   quando non ä caricato DRVSPACE.BIN, viene avviato invece il programma
+   di installazione di DriveSpace. In tal caso, uscire da programma di
+   installazione di DriveSpace.
+
+ * Se si digita il comando DRVSPACE /MOUNT, risulta che non ci sono pió
+   lettere di unitÖ utilizzabili per DriveSpace. (DriveSpace non puï 
+   installare un'unitÖ compressa se non ä caricato DRVSPACE.BIN).
+
+Per usare DriveSpace o le unitÖ compresse, riavviare il computer
+senza evitare DRVSPACE.BIN.
+
+
+7.23  Rimozione della protezione dalla scrittura da un disco floppy compresso
+-----------------------------------------------------------------------------
+Se si utilizza un disco floppy compresso protetto dalla scrittura ed ä 
+attivato Automounting, il disco rimarrÖ protetto dalla scrittura finchÇ non 
+ä disinstallato -- anche se si rimuove la protezione dalla scrittura.
+
+Per rimuovere la protezione dalla scrittura, usare uno dei metodi seguenti:
+
+ * Disinstallare il disco floppy usando il comando DRVSPACE /UNMOUNT,
+   quindi riprovare ad usare il disco (questo lo reinstallerÖ
+   automaticamente). Ad esempio, se il disco ä nell'unitÖ B, si digita
+   DRVSPACE /UNMOUNT B: quindi riprovare ad usare il disco. (Se Windows ä 
+   in esecuzione, non si puï usare il comando DRVSPACE /UNMOUNT. In tal 
+   caso, usare il metodo seguente).
+
+ * Inserire nell'unitÖ un disco floppy diverso ed accedervi (ad
+   esempio, eseguire su di esso il comando DIR). Questo disinstalla
+   automaticamente il disco floppy compresso che era precedentemente
+   nell'unitÖ). Quindi, reinserire il disco floppy compresso e riprovare
+   ad usarlo (ciï lo reinstallerÖ automaticamente).
+
+NOTA Se si usa DriveSpace e si installa un disco floppy DoubleSpace non 
+convertito, il disco verrÖ installato protetto da scrittura. L'unico modo 
+per eliminare la protezione ä di convertire il disco in formato DriveSpace. 
+Per informazioni, vedere la sezione 7.1.
+
+7.24  Autoinstallazione e utilitÖ di caching del disco Norton
+--------------------------------------------------------------
+Se si utilizza un'utilitÖ di caching del disco Norton come ad esempio
+Norton Cache (NCACHE2.EXE) o Norton Speedrive (SPEEDRV.EXE) accertarsi che 
+l'utilitÖ sia caricata dopo il comando DEVICE per DRVSPACE.SYS. Se si carica 
+una di queste utilitÖ prima di DRVSPACE.SYS, la caratteristica di 
+autoinstallazione di DriveSpace non funzionerÖ.
+
+7.25  UtilitÖ undelete e DriveSpace
+------------------------------------
+DriveSpace non puï comprimere o decomprimere unitÖ mentre ä in esecuzione 
+una utilitÖ undelete (ad esempio, Delete Sentry di Microsoft Undelete o 
+Norton SmartCan). Per comprimere o decomprimere un'unitÖ, sarÖ necessario 
+disattivare temporaneamente l'utilitÖ undelete. Seguire i seguenti passaggi:
+
+1. Cancellare tutti i file eliminati precedentemente per conservare spazio su 
+   disco. Se si utilizza Microsoft Delete Sentry, digitare come di seguito al 
+   prompt dei comandi:
+
+   UNDELETE /PURGE
+
+   Eseguire il comando su ogni unitÖ che si desidera comprimere o 
+   decomprimere. Se si decomprime un'unitÖ, si dovrebbero anche cancellare 
+   i file eliminati dall'unitÖ host. Per cancellare i file eliminati da 
+   un'unitÖ diversa dall'unitÖ corrente, specificare la lettera dell'unitÖ 
+   dopo il comando UNDELETE /PURGE (ad esempio, UNDELETE /PURGE E:).
+
+   Se si utilizza un'utilitÖ undelete diversa, consultare la documentazione 
+   dell'utilitÖ per ottenere informazioni sulla cancellazione di file 
+   eliminati.
+
+2. Modificare il file AUTOEXEC.BAT ed utilizzare il comando REM per 
+   disattivare il comando che avvia l'utilitÖ undelete. (Ad esempio, se si 
+   utilizza Delete Sentry, disattivare il comando UNDELETE /S).
+
+3. Riavviare il computer.
+
+4. Riprovare a comprimere o a decomprimere l'unitÖ.
+
+5. Quando ä terminata la compressione o decompressione, modificare il file 
+   AUTOEXEC.BAT, riattivare il comando che avvia l'utilitÖ undelete e 
+   riavviare il computer.
+
+7.26 Creazione di un disco di avvio di emergenza per i sistemi DriveSpace
+-------------------------------------------------------------------------
+Creare un disco di avvio di MS-DOS 6.22 se si usa DriveSpace:
+
+1. Se si esegue l'aggiornamento da MS-DOS 6.0, installare MS-DOS 6.22 nella 
+   directory che contiene i file della versione precedente di MS-DOS.
+
+2. Per creare un disco di avvio, eseguire nuovamente l'installazione 
+   digitando il seguente comando:
+
+   SETUP /F
+
+   Il programma di installazione installerÖ MS-DOS 6.22 su unb disco floppy. 
+   Il disco di avvio che ne risulterÖ non includerÖ DRVSPACE.BIN, cosç come 
+   MS-DOS 6.22 non include DriveSpace.
+
+3. Aggiungere il file DRVSPACE.BIN al disco floppy copiandolo dalla directory 
+   che contiene i file di MS-DOS. Per esempio, se la directory di MS-DOS ä 
+   DOS e il disco floppy si trova nell'unitÖ A, digitare:
+
+   COPY C:\DOS\DRVSPACE.BIN A:
+
+Nota: Se si esegue l'aggiornamento da MS-DOS 6, ma si ha necessitÖ di 
+installare il disco floppy senza installare prima MS-DOS 6.22 sul disco 
+rigido, ignorare il punto 1. Il risultante disco floppy includerÖ DoubleSpace 
+di MS-DOS 6 invece che di MS-DOS 6.2. Quando si avvierÖ il computer con 
+questo disco floppy apparirÖ un messaggio di DoubleSpace. Per continuare, 
+premere INVIO.
+
+
+7.27 ScanDisk non ä in grado di esaminare o riparare un volume DoubleSpace
+--------------------------------------------------------------------------
+ScanDisk di MS-DOS 6.22 ä in grado di esaminare le unitÖ o i volumi 
+DoubleSpace solo se DoubleSpace ä installato. Se si cerca di esaminare o 
+riparareun volume di DoubleSpace e DBLSPACE.BIN non ä caricato in memoria, 
+ScanDisk visualizza un messagio simile al seguente:
+
+	ScanDisk non ä in grado di esaminare o riparare il volume DoubleSpace 
+	C:\DBLSPACE.001.
+
+La causa del problema potrebbe essere una delle seguenti:
+
+	* L'aggiornamento ä stato eseguita a partire da MS-DOS 5 o da una 
+	versione precedente. In questo caso non ä possibile usare ScanDisK 
+	per esaminare le unitÖ DoubleSpace.
+
+	* DoubleSpace ä installato nel sistema, ma il computer ä stato avviato 
+	da disco floppy o premendo CTRL+F5 o CTRL+F8. In questo caso rimuovere 
+	il disco floppy, avviare nuovamente il computer e rieseguire ScanDisk.
+
+Se DoubleSpace non ä installato, sarÖ necessario caricare DBLSPACE.BIN per 
+poter esaminare e riparare l'unitÖ DopubleSpace.
+
+Per caricare DoubleSpace:
+
+1. Digitare quanto segue al prompt dei comandi, quindi premere INVIO:
+
+	REM >> C:\DBLSPACE.INI
+   
+   Questo comando crea un nuovo file DBLSPACE.INI, se non esiste giÖ uno.
+
+2. Riavviare il computer e rieseguire ScanDisk.
+
+3. Se DoubleSpace non si carica ancora, copiare il file DBLSPACE.BIN dalla 
+directory di MS-DOS alla directory principale dell'unitÖ C. Se, per esempio, 
+i file di MS-DOS si trovano nella directory C:\DOS, digitare quanto segue:
+
+	COPY C:\DOS\DBLSPACE.BIN C:\
+
+4.  Riavviare il computer e rieseguire ScanDisk.
+
+5. Se DoubleSpace non si carica ancora, copiare il file DBLSPACE.BIN dal 
+disco 1 Installazioni di MS-DOS 6.2 oppure dal disco 1 Disinstallazione che 
+ä stato creato durante l'aggiornamento da MS-DOS 6 a MS-DOS 6.2. Se, per 
+esempio, il disco si trova nell'unitÖ, digitare quanto segue:
+
+	COPY A:\DBLSPACE.BIN C:\
+
+6. Riavviare il computer e rieseguire ScanDisk.

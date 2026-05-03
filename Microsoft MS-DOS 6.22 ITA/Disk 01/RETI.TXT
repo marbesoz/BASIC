@@ -1,0 +1,462 @@
+RETI.TXT
+
+Questo file contiene delle informazioni su come rendere compatibile 
+la rete con MS-DOS 6.22.
+
+Questo file contiene le seguenti sezioni:
+
+1.  MS-DOS Shell e le reti
+2.  3+Share
+3.  Sistemi Arcnet
+4.  Artisoft LANtastic
+5.  AT&T StarGroup (non compatibili LAN Manager)
+6.  Banyan VINES
+7.  DEC Pathworks e PCSA
+8.  IBM PC LAN
+9. IBM DOS LAN Requester versione 1.30 o precedente
+10. Microsoft LAN Manager e reti compatibili
+11. Microsoft MS-Net e reti compatibili
+12. Net/One PC
+13. Reti Novell
+14. PC-NFS 3.0
+15. TCS 10Net o DCA 10Net
+
+1. MS-DOS Shell e le reti
+=========================
+La maggior parte dei software di rete non funzionano in maniera 
+corretta se avviati dal prompt dei comandi di MS-DOS Shell. 
+Avviare quindi la rete prima di avviare MS-DOS Shell.
+
+2. 3+Share
+==========
+Se il software di rete utilizzato Š 3+Share 1.6, e se si Š
+precedentemente eseguito un aggiornamento a MS-DOS 5.0, la versione 
+corrente del reindirizzatore funzioner… anche con MS-DOS 6.22. Dopo aver 
+installato MS-DOS 6.22, digitare la seguente stringa al prompt dei comandi 
+e riavviare il computer:
+
+    SETVER MSREDIR.EXE 5.0
+
+Se non si possiede il reindirizzatore incluso con MS-DOS 5.0, controllare 
+se la versione di MS-DOS 6.22 includeva un file NET.TXT.
+In tal caso, seguire le istruzioni  contenute nel file.
+
+Se la versione di MS-DOS 6.22 non includeva un file NET.TXT, Š possibile
+ottenere il reindirizzatore rivolgendosi al Servizio Supporto Tecnico della Microsoft.
+
+Se si possiede una versione 3+Share precedente alla 1.6, contattare il
+vostro rivenditore per un aggiornamento.
+
+3. Sistemi Arcnet
+=================
+Se la rete utilizza degli hardware Arcnet, pu• essere necessario 
+eseguire MSD con l'opzione /I. In tal caso, si raccomanda
+di non scegliere l'opzione "Networks" in MSD.
+
+4. Artisoft LANtastic
+=====================
+
+Artisoft LANtastic versione 3.02 o successiva Š compatibile con MS-DOS 6.22.
+
+Se si sta utilizzando una versione di LANtastic precedente alla 2.5, 
+richiedere una versione aggiornata al proprio rivenditore.
+
+Se si sta utilizzando una versione compresa tra la 2.5 e la 3.01 eseguire 
+la seguente procedura.
+
+Per aggiornare LANtastic versioni da 2.5 a 3.01:
+
+1 digitare il seguente comando al prompt dei comandi:
+
+SETVER SERVER.EXE 4.00
+
+2. Riavviare il computer
+
+Se si sta utilizzando EMM386, Š consigliabile escludere l'area di memoria 
+utilizzata dalla scheda di rete. Per eseguire questa operazione, includere 
+l'opzione x nel comando DEVICE del file CONFIG.SYS relativo a EMM386.EXE. 
+Se si stanno utilizzando le impostazioni predefinite della casa 
+costruttrice per l'adattatore LANtastic 2Mbps, includere l'opzione 
+x=d800-dfff nel comando DEVICE relativo a EMM386.EXE. Se questa regione 
+di memoria non viene esclusa, si potrebbero verificare dei problemi
+con i programmi che utilizzano la memoria espansa.
+
+Per ulteriori informazioni sulle opzioni di EMM386, digitare 
+HELP EMM386.EXE al prompt dei comandi dopo aver installato MS-DOS 6.22.
+ 
+NOTA
+Se Š stato caricato il servizio Server, il programma Microsoft Defrag non
+sar… compatibile con il software di rete LANtastic. Se Š stato caricato 
+soltanto il reindirizzatore, il programma sar… compatibile con il software 
+di rete LANtastic.
+
+5. AT&T StarGroup (non compatibili LAN Manager)
+===============================================
+Se si utilizza un software di rete AT&T StarGroup, Š consigliabile eseguire
+di nuovo il programma di installazione, scegliere Continua quando il 
+programma di installazione visualizzer… il messaggio "Si Š specificato che il
+computer Š collegato in rete" e seguire le istruzioni visualizzate.
+Se non sar… possibile eseguire il software di rete dopo l'installazione, 
+attenersi alle seguenti procedure:
+
+1  Digitare i seguenti comandi:
+
+   SETVER SETUP.EXE 4.00
+   SETVER ATTSTART.EXE 4.00
+
+2  Riavviare il computer.
+
+3  Utilizzare i dischi di installazione di StarGroup per rimuovere dal 
+   computer il software di rete esistente.
+
+4  Reinstallare StarGroup. Quando viene richiesto il numero della versione
+   di MS-DOS che si sta utilizzando, scegliere MS-DOS versione 4.0.
+
+6. Banyan VINES
+===============
+Banyan VINES versione 4.1 e successiva Š compatibile con MS-DOS 6.22. E' 
+possibile utilizzare Banyan VINES versione 4.0x con MS-DOS 6.22 se i file 
+REDIRALL.EXE o REDIR4.EXE si trovano nella directory BANYAN sul disco rigido.
+
+Se nessuno dei due file si trova sul disco rigido, ma si dispone dei 
+dischi di installazione di VINES contenenti uno dei due file, copiare il file 
+nella directory sul disco rigido nella quale si trovano i file di rete.
+
+Se i file non si trovano sul disco rigido n+ sui dischi di installazione 
+di VINES, contattare il rivenditore di Banyan VINES.
+
+Se si dispone di una versione di VINES precedente alla 4.0, richiedere 
+un aggiornamento al proprio rivenditore.
+
+NOTA
+In alcuni casi, Banyan VINES non Š compatibile con MemMaker. Se, ad 
+esempio, il software di rete sta caricando pi— componenti in diverse aree 
+di UMB, MemMaker potrebbe non funzionare in maniera corretta.
+
+7. DEC Pathworks e PCSA
+=======================
+Se Š installato DEC PATHWORKS per DOS versione 4.1, attenersi alle 
+seguenti procedure:
+
+1. Se si sta effettuando l'aggiornamento da MS-DOS versione 3.3 o 
+   precedente, occorre aggiornare il file di reindirizzamento, REDIR.EXE. 
+   E' possibile copiare il file REDIR.400 dai dischi di PATHWORKS o dal 
+   servizio di sistema, ridenominarlo come REDIR.EXE e collocarlo nella 
+   directory DECNET.
+
+2. Installare MS-DOS 6.22. Per ulteriori informazioni sull'installazione di 
+   MS-DOS 6.22, consultare la "Guida introduttiva".
+
+La versione 4.0 di PATHWORKS per DOS Š compatibile con MS-DOS 6.22. Tuttavia 
+per essere certi di tale compatibilit… sono necessari alcuni passaggi.
+
+
+Per aggiornare PATHWORKS versione 4.0:
+
+1. Se si sta effettuando l'aggiornamento da MS-DOS versione 3.3 o precedente, 
+   occorre aggiornare il file di reindirizzamento, REDIR.EXE. E' possibile 
+   copiare il file REDIR.400 dai dischi di PATHWORKS o dal servizio di 
+   sistema, ridenominarlo come REDIR.EXE e collocarlo nella directory DECNET.
+
+2. Installare MS-DOS 6.22 nel computer. Per ulteriori informazioni 
+   sull'installazione di MS-DOS 6.22, consultare la "Guida introduttiva".
+
+3. Riavviare il computer senza eseguire STARTNET.BAT, per avviare la rete.
+
+4. Digitare ciascuna delle seguenti righe al prompt dei comandi:
+
+   setver use.exe 4.00
+
+   setver memman.exe 4.00
+
+   setver lad.exe 4.00
+
+   setver show.exe 4.00
+
+   setver netsetup.exe 4.00
+
+5. Riavviare il computer ed eseguire STARTNET.BAT.
+
+Nota  Se si effettua un aggiornamento da PATHWORKS 4.0 a PATHWORKS 4.1, 
+      Š necessario disattivare i comandi SETVER specificati in questa 
+      procedura. Per eseguire questa operazione dopo aver installato 
+      PATHWORKS 4.1, digitare gli stessi comandi sostituendo 4.00 con 
+      l'opzione /d in ciascun comando.
+
+Se si sta utilizzando una versione di PATHWORKS o di PCSA precedente 
+alla 4.0, richiedere un aggiornamento al proprio rivenditore. Allo stesso 
+modo, se si sta utilizzando PATHWORKS o PCSA versione 3.x, 
+attenendosi alla seguente procedura sar… possibile incominciare 
+ad utilizzare MS-DOS 6.22.
+
+Nota  Per poter sfruttare Task Swapper di MS-DOS, utilizzare PATHWORKS per 
+      DOS versione 4.1 o successiva.
+
+Per aggiornare temporaneamente PATHWORKS o PCSA versione 3.x:
+
+1. Se si sta aggiornando da MS-DOS versione 3.3 o precedente, occorre 
+   aggiornare il file di reindirizzamento, REDIR.EXE. E' possibile copiare 
+   il file REDIR.400 dai dischi di PATHWORKS o dal servizio di sistema, 
+   ridenominarlo come REDIR.EXE e collocarlo nella directory DECNET.
+
+2. Installare MS-DOS 6.22. Per maggiori informazioni sull'installazione di 
+   MS-DOS 6.22, consultare la "Guida introduttiva". Quando si riavvia la rete, 
+   MS-DOS potrebbe visualizzare una serie di messaggi "Versione DOS
+   non corretta". Ignorare questi messaggi.
+
+3. Digitare tutti i seguenti comandi al prompt:
+  
+   SETVER USE.EXE 4.00
+   SETVER EMSLOAD.EXE 4.00
+   SETVER SCH.EXE 4.00
+   SETVER NETSETUP.EXE 4.00
+   SETVER NCP.EXE 4.00
+   SETVER DNNETHAT.EXE 4.00
+   SETVER LAD.EXE 4.00
+   SETVER DLL.DXE 4.00
+   SETVER MEMMAN.EXE 4.00
+   SETVER DNNETHLD.EXE 4.00
+   SETVER SHOW.EXE 4.00
+
+4. Riavviare il computer.
+
+8. IBM PC LAN
+=============
+Se sul computer Š installato IBM PC LAN 1.34 e si verificano dei problemi
+con applicazioni che utilizzano la protezione di record o di file, 
+potrebbe essere necessario il file REDIR50.EXE aggiornato incluso in 
+ICO 3039. Contattare il rivenditore IBM. 
+
+IBM PC LAN Program versione 1.33 o precedente
+---------------------------------------------
+Per utilizzare MS-DOS 6.22 con IBM PC LAN Program (PCLP), Š necessario 
+disporre di una delle seguenti versioni:
+
+o IBM PCLP versione 1.34.
+
+o IBM PCLP versione 1.3x aggiornata alla versione 1.34 applicando gli 
+  IBM Corrective Service Disks appropriati. Contattare il proprio 
+  rivenditore IBM per un aggiornamento del software.
+
+Se si sta utilizzando una versione di PCLP precedente alla 1.30, 
+contattare il proprio rivenditore IBM per un aggiornamento del software e 
+per le istruzioni necessarie.
+
+Per aggiornare le versioni di IBM PCLP comprese tra la 1.30 e la 1.34:
+
+1. Se si sta effettuando un aggiornamento dalla versione 1.34, saltare al 
+   passaggio 3 oppure installare il software IBM PCLP necessario seguendo 
+   le istruzioni incluse nel Corrective Service Disk fornito dall'IBM.
+ 
+2. Riavviare il computer e assicurarsi che la rete venga avviata.
+
+   Se non Š possibile avviare la rete, uscire da questa procedura e 
+   contattare il proprio rivenditore IBM.
+
+
+   Verr… visualizzato il seguente messaggio:
+
+   Start PC LAN Program 1.3 (Y/N)?
+
+3. Digitare n e premere INVIO.
+
+4. Digitare il seguente comando al prompt:
+
+   setver net.com /d
+
+5. Riavviare il computer.
+  
+   Verr… visualizzato il seguente messaggio:
+
+   Start PC LAN Program 1.3 (Y/N)?
+
+6. Digitare y e premere INVIO.
+
+NOTA  Il programma Microsoft Defrag non potr… essere eseguito su un 
+      server PCLP.
+
+9. IBM DOS LAN Requester versione 1.30 o precedente
+====================================================
+Per utilizzare MS-DOS 6.22 con IBM DOS LAN Requester, Š necessario disporre 
+dei seguenti file:
+
+o  File di DOS LAN Requester inclusi in OS/2 LAN Server versione 1.30.1.
+
+o  File di DOS LAN Requester forniti con OS/2 LAN Server versione 1.30 
+   che dispone di un IBM Corrective Service Diskette (CSD) 5015. Richiedere
+   il software necessario al proprio rivenditore IBM .
+
+Se si sta utilizzando una versione di DOS LAN Requester precedente 
+alla 1.30, richiedere al proprio rivenditore IBM il software e le 
+istruzioni necessarie. 
+
+Per aggiornare IBM DOS LAN Requester versione 1.30:
+
+1. Aggiornare il software di DOS LAN Requester alla versione 1.30 
+   seguendo le istruzioni incluse nel Corrective Service Disk 5015 fornito 
+   dalla IBM.
+ 
+2. Riavviare il computer accertandosi che sia stata avviata la rete.
+
+   Se non Š possibile avviare la rete, interrompere la procedura e 
+   contattare il proprio rivenditore IBM.
+
+   Verr… visualizzato il seguente messaggio:
+
+   Start DOS LAN Requester (Y/N)?
+
+3. Digitare n e premere INVIO.
+
+4. Digitare il seguente comando al prompt dei comandi:
+
+   setver net.com /d
+
+5. Riavviare il computer.
+  
+   Verr… visualizzato il seguente messaggio:
+
+   Start DOS LAN Requester (Y/N)?
+
+6. Digitare y e premere INVIO.
+
+ 
+10. Microsoft LAN Manager e compatibili
+=======================================
+Se si sta utilizzando una versione di Microsoft LAN Manager o di
+una rete compatibile disegnata per una versione di MS-DOS precedente alla
+4.0, controllare che la vostra versione di MS-DOS 6.22 contenga il file
+NET.TXT. In tal caso seguire le istruzioni su questo file.
+
+In caso contrario, contattare il Servizio Support Tecnico Clienti della Microsoft e richiedere i dischi
+supplementari.
+
+Una volta ottenuti i dischi supplementari, seguire le istruzioni nel file
+NET.TXT nei dischi supplementari.
+
+
+11. Microsoft MS-Net e compatibili
+==================================
+Se si sta utilizzando una versione di Microsoft NET o di
+una rete compatibile disegnata per una versione di MS-DOS precedente alla
+4.0, controllare che la vostra versione di MS-DOS 6.22 contenga il file
+NET.TXT. In tal caso seguire le istruzioni su questo file.
+
+In caso contrario, contattare il Servizio Support Tecnico Clienti della Microsoft e richiedere i dischi
+supplementari.
+
+Una volta ottenuti i dischi supplementari, seguire le istruzioni nel file
+NET.TXT nei dischi supplementari.
+
+12. Net/One PC
+==============
+Se non viene caricato Ungermann-Bass Net/One PC con MS-DOS 6.22, attenersi 
+a una delle seguenti istruzioni: 
+                           
+*    Richiedere al proprio rivenditore un file LOADNIU.EXE aggiornato.
+*    Inserire il comando UBPAUSE tra le righe LOADNIU e XNSBIOS del 
+     file MSNET.INI.
+*    Eseguire i comandi di rete da un file batch in cui il comando PAUSE 
+     sia incluso tra le righe LOADNIU e XNSBIOS.
+
+13. Reti Novell
+===============
+La versione corrente della shell Š la 3.31. E' necessario quindi richiedere 
+la versione 3.31 o successiva per poter utilizzare MS-DOS 6.22.
+
+Se si dispone di una versione di NetWare precedente alla 2.1 oppure se 
+il software di rete utilizza uno dei seguenti file, contattare il
+proprio rivenditore:
+
+NET3.COM
+NET4.COM
+XMSNET3.EXE
+XMSNET4.EXE
+EMSNET3.EXE
+EMSNET4.EXE
+
+Se eseguendo una rete Novell non Š possibile utilizzare Task Swapper di 
+MS-DOS Shell, contattare il proprio rivenditore.
+
+Se non Š possibile caricare MS-DOS 6.22 sulla propria workstation tramite 
+avvio remoto, richiedere il file RPLFIX.COM al proprio rivenditore Novell. 
+
+Se si utilizza il programma di connessione Novell per impostare la 
+variabile COMSPEC dopo aver avviato MS-DOS 6.22 e non Š possibile 
+ricaricare il file COMMAND.COM, modificare la riga di comando SHELL 
+del file CONFIG.SYS. Accertarsi che il percorso del file COMMAND.COM 
+specifichi la directory principale ed eliminare, se esiste, il parametro 
+c:\dos\ che segue il percorso.
+
+Se, ad esempio, la riga di comando SHELL appare in questo modo:
+
+    SHELL=C:\DOS\COMMAND.COM  C:\DOS\  /P  /E:512
+
+Modificarla in:
+
+    SHELL=C:\COMMAND.COM  /P  /E:512
+Oppure richiedere un nuovo programma di connessione al proprio 
+rivenditore Novell.
+
+NOTA
+Il parametro %OS_VERSION utilizzato nelle procedure di accesso diventer…
+v5.00 se viene utilizzata shell 3.31 o precedente. Fino a quando la 
+Novell non rilascer… una shell aggiornata, Š consigliabile astenersi 
+dall'utilizzare il parametro %OS_VERSION oppure si consiglia di trasferire 
+un'unit… v6.00 sull'unit… v5.00 esistente in una procedura di accesso 
+dell'utente.
+
+Installazione di MS-DOS e configurazione condivisa di Windows
+-------------------------------------------------------------
+Se si utilizza un'unit… search per accedere i file di inizializzazione di 
+Windows (PROGMAN.INI, SYSTEM.INI e WINFILE.INI) su una directory di rete e
+si vuole installare i programmi Windows inclusi con MS-DOS, seguire la 
+seguente procedura prima di eseguire l'installazione.
+
+NOTA Le informazioni contenute in questa sezione valgono sia per il programma
+di installazione normale, sia per quello eseguito con l'opzione /E.
+
+* Sovrascrivere temporaneamente l'unit… search usando il comando MAP al
+  prompt dei comandi. Per esempio, se la lettera per la vostra unit… di 
+  rete Š W e il percorso Š \USER\JOEB, digitare MAP DEL W: al prompt dei 
+  comandi per eliminare temporaneamente l'unit… search. Digitare quindi 
+  MAP W:=SYS:USER\JOEB, al prompt dei comandi. Eseguire quindi 
+  l'installazione. Al termine dell'installazione, e dopo aver riavviato 
+  il computer, il vostro sistema sar… ritornato alla sua normale 
+  configurazione.
+
+14. PC-NFS
+==========
+Se si utilizza il comando SETVER per riportare una diversa versione di 
+programma a MS-DOS, Š possibile che PC-NFS 3.x riporti la versione del 
+programma in maniera errata. In questo caso, richiedere al proprio 
+rivenditore il software di rete aggiornato.
+
+Se non Š possibile utilizzare i comandi COPY o XCOPY in PC-NFS 3.01, 
+richiedere una versione aggiornata del driver di periferica PCNFS.SYS 
+al proprio rivenditore.
+
+Se si sta utilizzando il software di rete PC-NFS, attenersi alla seguente 
+procedura prima di eseguire MemMaker:
+
+1. Aprire il file MEMMAKER.INF con un qualsiasi editor di testo. Questo 
+   file Š incluso nella directory in cui si trovano i file MS-DOS.
+
+2. Aggiungere la seguente riga di comando al file:
+
+   *NET
+
+3. Salvare il file, quindi eseguire MemMaker.
+
+
+15. TCS 10Net o DCA 10Net
+=========================
+DCA 10Net Plus versione 4.20 (20) e successiva e DCA 10Net versione 3.3 
+(41) e successiva sono compatibili con MS-DOS 6.22. Se si sta utilizzando 
+una versione precedente, richiedere un aggiornamento al proprio 
+rivenditore.
+
+NOTA
+Se Š stato caricato il servizio Server, il programma Microsoft Defrag 
+non sar… compatibile con il software di rete 10Net. Se Š stato caricato 
+solo il reindirizzatore, il programma sar… compatibile con il software 
+di rete 10Net.

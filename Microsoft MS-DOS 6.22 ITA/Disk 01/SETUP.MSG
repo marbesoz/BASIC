@@ -1,0 +1,61 @@
+[CopyWait]
+Grazie per aver scelto MS-DOS 6.22. Invii la scheda di
+registrazione per beneficiare dei servizi riservati 
+ai clienti Microsoft:
+
+   þ Informazioni sugli aggiornamenti dei prodotti.
+   þ Servizio Supporto Tecnico Clienti.
+   þ Informazioni su altri prodotti Microsoft.
+
+[CopyWait]
+Aumentare la capacit… del disco rigido con DriveSpace.
+Con MS-DOS 6.22 Š possibile aumentare lo spazio disponibile
+sul disco rigido in maniera facile e sicura integrando la
+compressione dei dati al sistema operativo.
+
+Se non si utilizza ancora il sistema di compressione, Š
+possibile aumentare la dimensione del disco rigido digitando
+DRVSPACE al prompt dei comandi non appena terminata l'installazione.
+
+[CopyWait]
+MS-DOS 6.22 presenta delle caratteristiche incorporate
+per la gestione della memoria. Tra queste, MemMaker
+permette anche agli utenti non esperti di ottimizzare
+la memoria in maniera facile e sicura.
+
+Se si dispone di un processore 386 o superiore, per
+ottimizzare la memoria del proprio PC Š sufficiente
+digitare MEMMAKER al prompt dei comandi.
+
+[CopyWait]
+Massima protezione per i propri dati!
+   þ Anti-Virus consente il rilevamento e la rimozione dei virus.
+   þ Backup consente di creare facilmente una copia di riserva
+     dei dati, al fine di preservarne l'integrit….
+   þ Undelete consente il recupero di directory e file eliminati.
+     Offre inoltre tre livelli di protezione dei dati.
+
+Queste caratteristiche sono disponibili sia in ambiente MS-DOS
+che in ambiente Windows.
+
+[CopyWait]
+Correggete ogni eventuale problema del disco con SCANDISK,
+l'utilit… avanzata di ripristino dei dati del disco rigido.
+SCANDISK Š in grado di diagnosticare e correggere un ampio
+ventaglio di problemi sia sulle unit… compresse che su quelle
+non compresse.
+
+Anche quando il disco rigido funziona normalmente, l'uso
+regolare di SCANDISK Š il modo migliore per mantenerlo
+in perfetta efficienza.
+
+[CopyWait]
+MS-DOS6.22 permette di controllare l'avvio del computer.
+E' possibile:
+
+   þ Scegliere fra varie configurazioni d'avvio realizzando 
+   voci di menu nel file CONFIG.SYS.
+   þ Saltare del tutto i file di avvio premendo F5 quando 
+   si avvia il computer.   
+   þ Ignorare i comandi del file di avvio premendo F8 all'avvio
+   del computer.

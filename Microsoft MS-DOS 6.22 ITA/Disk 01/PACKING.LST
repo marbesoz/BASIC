@@ -1,0 +1,176 @@
+Microsoft MS-DOS 6.22
+=====================
+
+Contenuto dischi floppy 1,44 MB
+-------------------------------------
+
+Questo file elenca il contenuto di ognuno dei tre dischi di
+installazione.
+
+Molti dei file sui tre dischi di installazione sono compressi.
+La colonna sinistra elenca il nome del file come appare sul disco.
+La colonna destra il nome del file dopo l'espansione. In alcuni casi, i
+nomi sono gli stessi poichŠ alcuni file non sono compressi sui dischi di
+installazione. (Per esempio questo file, PACKING.LST, non Š compresso).
+
+Ciascun file compresso deve essere espanso prima che possa essere utilizzato.
+Tutti i file compressi hanno un nome nella colonna sinistra che termina con 
+il carattere di sottolineatura ("_").  Per espandere un file, fare ricorso 
+all'utilit… EXPAND. Quest'ultima si trova sul Disco 1 - Installazione (in 
+formato non compresso cosi' da permetterne l'utilizzo), ed Š inoltre copiata 
+dall'installazione su entrambe le directory MS-DOS e Windows del vostro disco 
+rigido. (Nota: Per espandere file prima di eseguire l'installazione occorre  
+copiare EXPAND.EXE dal disco di installazione 1 alla directory DOS del vostro 
+disco rigido).
+
+Per esempio, per espandere il file MEM.EX_ dal Disco 1 - Installazione
+nell'unit… A, alla directory DOS sull'unit… C, seguire i seguenti passi:
+
+  - Accertarsi che il disco di installazione 1 sia nell'unit… A
+  - Digitare il seguente comando sul prompt dei comandi MS-DOS:
+    EXPAND A:\MEM.EX_ C:\DOS\MEM.EXE
+
+
+La documentazione di MS-DOS riporta maggiori informazioni sull'utilit… EXPAND.
+
+Disco di installazione 1
+------------------------
+ATTRIB.EXE              ATTRIB.EXE
+AUTOEXEC.BAT            AUTOEXEC.BAT
+CHKDSK.EXE              CHKDSK.EXE
+COMMAND.COM             COMMAND.COM
+CONFIG.SYS              CONFIG.SYS
+COUNTRY.SYS             COUNTRY.SYS
+DEBUG.EXE               DEBUG.EXE
+DEFRAG.EXE              DEFRAG.EXE
+DEFRAG.HL_              DEFRAG.HLP
+DOSSETUP.INI            DOSSETUP.INI
+DRVSPACE.BIN            DRVSPACE.BIN
+EDIT.COM                EDIT.COM
+EGA.CP_                 EGA.CPI
+EGA2.CP_                EGA2.CPI
+EGA3.CP_                EGA3.CPI
+EMM386.EX_              EMM386.EXE
+EXPAND.EXE              EXPAND.EXE
+FDISK.EXE               FDISK.EXE
+FORMAT.COM              FORMAT.COM
+LEGGIMI.TXT             LEGGIMI.TXT
+PAESE.TX_               PAESE.TXT
+IO.SYS                  IO.SYS
+ISO.CP_                 ISO.CPI
+KEYB.COM                KEYB.COM
+KEYBOARD.SYS            KEYBOARD.SYS
+KEYBRD2.SY_             KEYBRD2.SYS
+MEM.EX_                 MEM.EXE
+MSCDEX.EXE              MSCDEX.EXE
+MSD.EXE                 MSD.EXE
+MSDOS.SYS               MSDOS.SYS
+NETWORKS.TXT            NETWORKS.TXT
+NLSFUNC.EXE             NLSFUNC.EXE
+PACKING.LST             PACKING.LST
+QBASIC.EXE              QBASIC.EXE
+REPLACE.EX_             REPLACE.EXE
+RESTORE.EX_             RESTORE.EXE
+SCANDISK.EXE            SCANDISK.EXE
+SCANDISK.INI            SCANDISK.INI
+SETUP.EXE               SETUP.EXE
+SETUP.MSG               SETUP.MSG
+SYS.COM                 SYS.COM
+XCOPY.EX_               XCOPY.EXE
+
+Disco di installazione 1
+------------------------
+ANSI.SY_                ANSI.SYS
+APPEND.EX_              APPEND.EXE
+CHKSTATE.SY_            CHKSTATE.SYS
+CHOICE.COM              CHOICE.COM
+DBLWIN.HL_              DBLWIN.HLP
+DELTREE.EX_             DELTREE.EXE
+DISKCOMP.CO_            DISKCOMP.COM
+DISKCOPY.CO_            DISKCOPY.COM
+DISPLAY.SY_             DISPLAY.SYS
+DOSHELP.HL_             DOSHELP.HLP
+DOSKEY.CO_              DOSKEY.COM
+DRIVER.SY_              DRIVER.SYS
+DRVSPACE.EXE            DRVSPACE.EXE
+DRVSPACE.HL_            DRVSPACE.HLP
+DRVSPACE.IN_            DRVSPACE.INF
+DRVSPACE.SY_            DRVSPACE.SYS
+DRVSPACE.TX_            DRVSPACE.TXT
+EDIT.HL_                EDIT.HLP
+FASTHELP.EX_            FASTHELP.EXE
+FASTOPEN.EX_            FASTOPEN.EXE
+FC.EX_                  FC.EXE
+FIND.EX_                FIND.EXE
+GRAPHICS.CO_            GRAPHICS.COM
+GRAPHICS.PR_            GRAPHICS.PRO
+HELP.COM                HELP.COM
+HELP.HL_                HELP.HLP
+HIMEM.SY_               HIMEM.SYS
+INTERLNK.EX_            INTERLNK.EXE
+INTERSVR.EX_            INTERSVR.EXE
+LABEL.EX_               LABEL.EXE
+LOADFIX.CO_             LOADFIX.COM
+MEMMAKER.EXE            MEMMAKER.EXE
+MEMMAKER.HL_            MEMMAKER.HLP
+MEMMAKER.IN_            MEMMAKER.INF
+MODE.CO_                MODE.COM
+MONOUMB.38_             MONOUMB.386
+MORE.COM                MORE.COM
+MOVE.EX_                MOVE.EXE
+MSBACKUP.EX_            MSBACKUP.EXE
+MSBCONFG.HL_            MSBCONFG.HLP
+MSBCONFG.OVL            MSBCONFG.OVL
+MSTOOLS.DL_             MSTOOLS.DLL
+MWBACKR.DL_             MWBACKR.DLL
+MWBACKUP.EX_            MWBACKUP.EXE
+POWER.EX_               POWER.EXE
+PRINT.EX_               PRINT.EXE
+QBASIC.HL_              QBASIC.HLP
+RAMDRIVE.SY_            RAMDRIVE.SYS
+SETVER.EX_              SETVER.EXE
+SHARE.EX_               SHARE.EXE
+SIZER.EX_               SIZER.EXE
+SMARTDRV.EX_            SMARTDRV.EXE
+SMARTMON.EX_            SMARTMON.EXE
+SMARTMON.HL_            SMARTMON.HLP
+SORT.EX_                SORT.EXE
+SUBST.EX_               SUBST.EXE
+TREE.CO_                TREE.COM
+UNFORMAT.COM            UNFORMAT.COM
+VFINTD.38_              VFINTD.386
+WINA20.38_              WINA20.386
+
+Disco di installazione 3
+------------------------
+MSAV.EXE                MSAV.EXE
+MSAV.HL_                MSAV.HLP
+MSAVHELP.OV_            MSAVHELP.OVL
+MSAVIRUS.LS_            MSAVIRUS.LST
+MSBACKDB.OVL            MSBACKDB.OVL
+MSBACKDR.OVL            MSBACKDR.OVL
+MSBACKFB.OVL            MSBACKFB.OVL
+MSBACKFR.OVL            MSBACKFR.OVL
+MSBACKUP.HL_            MSBACKUP.HLP
+MSBACKUP.OVL            MSBACKUP.OVL
+MWAV.EX_                MWAV.EXE
+MWAV.HL_                MWAV.HLP
+MWAVABSI.DL_            MWAVABSI.DLL
+MWAVDLG.DL_             MWAVDLG.DLL
+MWAVDOSL.DL_            MWAVDOSL.DLL
+MWAVDRVL.DL_            MWAVDRVL.DLL
+MWAVMGR.DL_             MWAVMGR.DLL
+MWAVSCAN.DL_            MWAVSCAN.DLL
+MWAVSOS.DL_             MWAVSOS.DLL
+MWAVTSR.EX_             MWAVTSR.EXE
+MWBACKF.DL_             MWBACKF.DLL
+MWBACKUP.HL_            MWBACKUP.HLP
+MWGRAFIC.DL_            MWGRAFIC.DLL
+MWUNDEL.EX_             MWUNDEL.EXE
+MWUNDEL.HL_             MWUNDEL.HLP
+UNDELETE.EXE            UNDELETE.EXE
+VSAFE.CO_               VSAFE.COM
+WNTOOLS.GR_             WNTOOLS.GRB
+
+
+
