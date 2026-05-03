@@ -1,0 +1,33 @@
+10 REM da 'Le Scienze' numero 190, giugno 1984
+20 CLS
+30 DEFDBL A-Z
+40 PRINT"** NUMERI PALINDROMI ** ( ovvero numeri simmetrici )"
+50 PRINT
+60 PRINT"Si prenda un numero qualsiasi e lo si sommi com quello ottenuto dalla sua lettu-";
+70 PRINT"ra rovesciata. Si continui l'operazione con il risultato cosi' ottenuto. Dopo un";
+80 PRINT"certo numero di volte saltera' fuori il palindromo, cioe' un numero simmetrico e";
+90 PRINT"che rimane inalterato leggendolo sia da sinistra verso destra che da destra ver-";
+100 PRINT"so sinistra. Per esempio, 6999 e 7998 danno entrambi lo stesso risultato , cioe'";
+110 PRINT"16668488486661. Il palindromo di 196 non e' stato ancora trovato !"
+120 PRINT:PRINT:PRINT:PRINT
+130 INPUT"DIMMI UN NUMERO INTERO E POSITIVO : ",NUMERODIPARTENZA
+140 PRINT
+150 IF NUMERODIPARTENZA  <0 THEN GOTO 20
+160 IF NUMERODIPARTENZA <> INT(NUMERODIPARTENZA) THEN GOTO 20
+170 NUMERODIPARTENZA$=STR$(NUMERODIPARTENZA)
+180 NUMEROROVESCIATO$=""
+190 FOR I%=LEN(NUMERODIPARTENZA$) TO 1 STEP -1
+200 NUMEROROVESCIATO$=NUMEROROVESCIATO$+MID$(NUMERODIPARTENZA$,I%,1)
+210 NEXT I%
+220 NUMEROROVESCIATO=VAL(NUMEROROVESCIATO$)
+230 IF NUMEROROVESCIATO=NUMERODIPARTENZA THEN GOTO 280
+240 NUOVONUMERO=NUMERODIPARTENZA+NUMEROROVESCIATO
+250 PRINT NUMERODIPARTENZA,NUMEROROVESCIATO,NUOVONUMERO
+260 NUMERODIPARTENZA=NUOVONUMERO
+270 GOTO 170
+280 PRINT
+290 PRINT"EUREKA !!!!  Il numero palindromo e' =======>";NUMERODIPARTENZA
+300 PRINT
+310 PRINT:PRINT:PRINT:PRINT
+320 PRINT"(un tasto per continuare) ";:A$=INPUT$(1):GOTO 20
+

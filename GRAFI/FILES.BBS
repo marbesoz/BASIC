@@ -1,0 +1,31 @@
+BIBBAS1.ARC    Bibliografie in BASIC compreso RUNTIME (A. De Santis)
+BIBBAS2.ARC    Files archivio vuoti per precedente (A. De Santis)
+BIBLIOG.ARC    Sistema bibliografico dBIII compilato (E. De Palo)
+ARCH.EXE       Bibliografie in Basic (richiede BASRUN20.EXE) (De Santis)
+COPIA.EXE      Utility per precedente (richiede runtime) (A. De Santis)
+PKX35A35.EXE Libreria completa di compattatori/scompattatori
+PKARC.COM Compattatore
+PKARC.DOC Documentazione per detto
+PKXARC.COM Scompattatore
+PKXARC.DOC Documentazione per detto
+ANALYZE.EXE Analizza grado di frammentazione disco fisso
+OPTIMIZE.EXE Ottimizza disco fisso frammentato
+OPTIMIZ2.PGM Overlay binario per detto (indispensabile)
+CACHE.COM Memoria cache velocizza disco fisso C:
+SIMCGA.COM Simula CGA su Hercules
+SETCGA.COM Setta DOS a CGA
+SETMONO.COM Setta il DOS sulla monocromatica
+T.BAS T di Student Grafico (Bianchi)
+SATHB.BAS Curva saturazione Hb (Bianchi)
+GAUSS.BAS Curva di Gauss (P. Bianchi)
+PALINDRO.MI Numeri palindromi (Besozzi)
+HAILSTON.ES Uno strano comportamento dei numeri (Besozzi)
+STRANATT.001 Strano Attrattore (Besozzi)
+GRAFI.001 Grafica mediante funzioni matematiche...
+GRAFI.002 ...da 'LE SCIENZE'...
+GRAFI.003 ...(articoli originali disponibili)...
+GRAFI.004 ...a cura...
+GRAFI.005 ...di...
+GRAFI.006 ...M Besozzi
+GRAFI.DOC Breve documentazione programmi GRAFI.*
+

@@ -1,0 +1,45 @@
+> Breve documentazione by M. Besozzi
+>
+> I files GRAFI.* contengono dei brevissimi programmi tratti dalla rubrica
+> (RI)CREAZIONI AL CALCOLATORE tenuta da A. K. Dewney sullo SCIENTIFIC 
+> AMERICAN (traduzione italiana: LE SCIENZE).
+>
+> Tutti i programmi sono scritti in Basic Microsoft, e quindi funzionano
+> con gli interpreti BASICA e GWBASIC, con una piccola limitazione: per 
+> mantenere il maggior grado di risoluzione possibile (ovvio dovendo fare
+> della grafica come quella che vedrete) si e' fatto riferimento allo
+> schermo 640x400 del GWBASIC per la grafica standard Olivetti. Chi avesse
+> un IBM con CGA (risoluzione 640x200) dovra' modificare opportunamente
+> i programmi (i 399 diventano 199, e SCREEN 3 diventa SCREEN 2).
+>
+> Il concetto base di tutti i programmi e' semplice, anche se ha a che
+> vedere con concetti matematici modernissimi (CAOS, ATTRATTORI STRANI,
+> FRATTALI: tutte cose che, quando vi sembra di averle capite, vi viene
+> un colpo perche' vi rendete improvvisamente conto di non avere capito
+> un tubo !): si prende una funzione, si immettono dei valori iniziali,
+> se ne calcola il risultato, si reintroduce il risultato nella funzione
+> stessa, e cosi' via, in modo iterativo. Facile no ?.
+>
+> Il programma GRAFI.001 traccia dei cerchi (data la risoluzione diversa
+> in orizzontale rispetto alla verticale diventano degli ovali) pertendo da
+> una posizione (angolo in basso a sinistra) definita dall'utente, per un
+> quadrato di lato definito (la terza variabile). Cambiando le dimensioni
+> del quadrato di visuale, si ha una regressione all'infinito: provare
+> per credere !.
+>
+> I programmi da GRAFI.002 a GRAFI.005 (quest'ultimo esteticamente il
+> migliore in assoluto, si differenziano in modo sostanziale da GRAFI.001
+> in quanto, al contrario di questo, non prevedono una scansione regolare
+> dello schermo (da sinistra a destra, dall'alto in basso), ma in essi lo 
+> schermo si accende in modo RANDOM, sempre ovviamente sulla base dei 
+> risultati delle funzioni.
+>
+> Non voglio dirvi di piu': provate, e' troppo bello.
+>
+> Se qualcuno fosse veramente interessato, ho a disposizione l'articolo
+> originale, e posso fargliene una fotocopia.
+>
+>                   Ciao
+>                                        M. Besozzi
+ 
+
